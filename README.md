@@ -90,19 +90,6 @@ A continuación se detallan las cuentas configuradas en las plataformas de nube 
 
 ![A1 Salvador 2](evidencias/P01/salvador/1.1.png)
 
-<br>
-
-**3. Captura de evidencia:**
-
-![A1 Salvador 3](evidencias/P01/salvador/1.2.png)
-
-<br>
-
-**4. Captura de evidencia:**
-
-![A1 Salvador 4](evidencias/P01/salvador/1.3.png)
-
----
 
 ## 2. Configuración de alertas de presupuesto (Actividad A2)
 
@@ -141,19 +128,32 @@ Se establecieron los presupuestos y umbrales preventivos en ambos proveedores:
 
 #### Evidencias de presupuestos y alertas
 
+
 **1. Captura de evidencia:**
 
-![A2 Salvador 1](evidencias/P01/salvador/2.png)
+![A1 Salvador 3](evidencias/P01/salvador/1.2.png)
 
 <br>
 
 **2. Captura de evidencia:**
 
+![A1 Salvador 4](evidencias/P01/salvador/1.3.png)
+
+---
+
+**3. Captura de evidencia:**
+
+![A2 Salvador 1](evidencias/P01/salvador/2.png)
+
+<br>
+
+**4. Captura de evidencia:**
+
 ![A2 Salvador 2](evidencias/P01/salvador/2.1.png)
 
 <br>
 
-**3. Captura de evidencia:**
+**5. Captura de evidencia:**
 
 ![A2 Salvador 3](evidencias/P01/salvador/2.2.png)
 
