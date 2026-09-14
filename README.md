@@ -165,25 +165,24 @@ Se estimó la arquitectura de referencia compuesta por:
 
 | Proveedor | Servicio | Modelo | Qué administra el proveedor | Qué administras tú | Unidad de cobro | Capa gratuita | Disponible en México | Captura de evidencia |
 |---|---|---|---|---|---|---|---|---|
-| AWS | Amazon EC2 | IaaS | Hardware, red física y virtualización. | Sistema operativo, parches, aplicaciones, datos y seguridad. | Instancia por hora o segundo, según configuración. | Por verificar. | Por verificar en mx-central-1. | ![Precios y disponibilidad de EC2](URL_IMAGEN) |
-| AWS | Elastic Beanstalk | PaaS | Aprovisionamiento del entorno, balanceo, escalado y monitoreo. | Código, datos, configuración y políticas de actualización. | Sin cargo adicional por Beanstalk; se cobran los recursos utilizados. | Por verificar en los recursos utilizados. | No existe en mx-central-1. | ![Precios y disponibilidad de Beanstalk](URL_IMAGEN) |
-| AWS | AWS Lambda | FaaS | Servidores, infraestructura de ejecución y escalado. | Código, dependencias, memoria, permisos y disparadores. | Millón de solicitudes y GB-segundo de ejecución. | Por verificar. | mx-central-1. | ![Precios y disponibilidad de Lambda](URL_IMAGEN) |
-| AWS | Amazon ECS con Fargate | Contenedores gestionados | Servidores y ejecución de contenedores. | Imágenes, tareas, servicios, red, permisos y reglas de escalado. | vCPU-segundo y GB-segundo de memoria asignada. | Por verificar. | Por verificar en mx-central-1. | ![Precios y disponibilidad de Fargate](URL_IMAGEN) |
-| AWS | Amazon RDS para PostgreSQL | Base de datos gestionada | Infraestructura, mantenimiento del motor y mecanismos de respaldo y recuperación. | Esquemas, consultas, datos, usuarios y configuración de respaldos y disponibilidad. | Instancia por hora y almacenamiento por GB-mes. | Por verificar. | Por verificar en mx-central-1. | ![Precios y disponibilidad de RDS](URL_IMAGEN) |
-| AWS | Amazon S3 | Almacenamiento de objetos | Infraestructura, durabilidad y disponibilidad del almacenamiento. | Objetos, buckets, permisos, clases de almacenamiento y ciclo de vida. | GB-mes, solicitudes y transferencia según uso. | Por verificar. | Por verificar en mx-central-1. | ![Precios y disponibilidad de S3](URL_IMAGEN) |
-| AWS | Amazon Bedrock | IA gestionada | Infraestructura de inferencia y alojamiento de modelos. | Modelo, prompts, datos, permisos e integración. | Tokens de entrada y salida, según modelo y modalidad. | Por verificar. | Por verificar según modelo y modalidad. | ![Precios y disponibilidad de Bedrock](URL_IMAGEN) |
-| Azure | Azure Virtual Machines | IaaS | Hardware, red física y virtualización. | Sistema operativo, parches, aplicaciones, datos y seguridad. | Tiempo de ejecución, con tarifa por hora según tamaño. | Por verificar. | Por verificar en Mexico Central. | ![Precios y disponibilidad de Virtual Machines](URL_IMAGEN) |
-| Azure | Azure App Service | PaaS | Infraestructura y plataforma de alojamiento de aplicaciones. | Código, datos, configuración, dependencias y reglas de escalado. | Instancia del plan por tiempo de uso; puede mostrarse una tarifa mensual. | Por verificar. | Por verificar en Mexico Central. | ![Precios y disponibilidad de App Service](URL_IMAGEN) |
-| Azure | Azure Functions | FaaS | Infraestructura de ejecución y escalado según el plan. | Código, dependencias, disparadores, permisos y configuración. | En Consumption: millón de ejecuciones y GB-segundo. | Por verificar. | Por verificar en Mexico Central según plan. | ![Precios y disponibilidad de Functions](URL_IMAGEN) |
-| Azure | Azure Container Apps | Contenedores gestionados | Infraestructura, orquestación y mecanismos de escalado. | Imágenes, configuración, permisos y reglas de escalado. | En Consumption: vCPU-segundo, GiB-segundo y millón de solicitudes. | Por verificar. | Por verificar en Mexico Central. | ![Precios y disponibilidad de Container Apps](URL_IMAGEN) |
-| Azure | Azure SQL Database | Base de datos gestionada | Infraestructura, actualizaciones del motor, respaldos y alta disponibilidad. | Tablas, consultas, datos, usuarios, capacidad y seguridad. | Según modalidad: vCore-hora, vCore-segundo o plan DTU; almacenamiento por GB-mes. | Por verificar. | Por verificar en Mexico Central según modalidad. | ![Precios y disponibilidad de SQL Database](URL_IMAGEN) |
-| Azure | Azure Blob Storage | Almacenamiento de objetos | Infraestructura, almacenamiento y replicación según la opción elegida. | Contenedores, archivos, permisos, nivel de acceso y ciclo de vida. | GB-mes, operaciones y transferencia según uso. | Por verificar. | Por verificar en Mexico Central. | ![Precios y disponibilidad de Blob Storage](URL_IMAGEN) |
-| Azure | Azure OpenAI | IA gestionada | Alojamiento de modelos e infraestructura de inferencia. | Modelo, implementación, prompts, datos, permisos e integración. | En pago por uso: millón de tokens de entrada y salida, según modelo. | Por verificar. | No esta disponible. | ![Precios y disponibilidad de Azure OpenAI](URL_IMAGEN) |
+| AWS | Amazon EC2 | IaaS | Hardware, red física y virtualización. | Sistema operativo, parches, aplicaciones, datos y seguridad. | Instancia por hora o segundo, según configuración. | Por verificar. | Por verificar en mx-central-1. | ![EC2](<evidencias/P01/table 3/1.png>) |
+| AWS | Elastic Beanstalk | PaaS | Aprovisionamiento del entorno, balanceo, escalado y monitoreo. | Código, datos, configuración y políticas de actualización. | Sin cargo adicional por Beanstalk; se cobran los recursos utilizados. | Por verificar en los recursos utilizados. | No existe en mx-central-1. | ![Beanstalk](<evidencias/P01/table 3/2.png>) |
+| AWS | AWS Lambda | FaaS | Servidores, infraestructura de ejecución y escalado. | Código, dependencias, memoria, permisos y disparadores. | Millón de solicitudes y GB-segundo de ejecución. | Por verificar. | mx-central-1. | ![Lambda](<evidencias/P01/table 3/3.png>) |
+| AWS | Amazon ECS con Fargate | Contenedores gestionados | Servidores y ejecución de contenedores. | Imágenes, tareas, servicios, red, permisos y reglas de escalado. | vCPU-segundo y GB-segundo de memoria asignada. | Por verificar. | Por verificar en mx-central-1. | ![Fargate 4](<evidencias/P01/table 3/4.png>) ![Fargate 4.1](<evidencias/P01/table 3/4.1.png>) ![Fargate 4.2](<evidencias/P01/table 3/4.2.png>) |
+| AWS | Amazon RDS para PostgreSQL | Base de datos gestionada | Infraestructura, mantenimiento del motor y mecanismos de respaldo y recuperación. | Esquemas, consultas, datos, usuarios y configuración de respaldos y disponibilidad. | Instancia por hora y almacenamiento por GB-mes. | Por verificar. | Por verificar en mx-central-1. | ![RDS](<evidencias/P01/table 3/5.png>) |
+| AWS | Amazon S3 | Almacenamiento de objetos | Infraestructura, durabilidad y disponibilidad del almacenamiento. | Objetos, buckets, permisos, clases de almacenamiento y ciclo de vida. | GB-mes, solicitudes y transferencia según uso. | Por verificar. | Por verificar en mx-central-1. | ![S3](<evidencias/P01/table 3/6.png>) |
+| AWS | Amazon Bedrock | IA gestionada | Infraestructura de inferencia y alojamiento de modelos. | Modelo, prompts, datos, permisos e integración. | Tokens de entrada y salida, según modelo y modalidad. | Por verificar. | Por verificar según modelo y modalidad. | ![Bedrock 7](<evidencias/P01/table 3/7.png>) ![Bedrock 7.1](<evidencias/P01/table 3/7.1.png>) |
+| Azure | Azure Virtual Machines | IaaS | Hardware, red física y virtualización. | Sistema operativo, parches, aplicaciones, datos y seguridad. | Tiempo de ejecución, con tarifa por hora según tamaño. | Por verificar. | Por verificar en Mexico Central. | ![Virtual Machines](<evidencias/P01/table 3/8.png>) |
+| Azure | Azure App Service | PaaS | Infraestructura y plataforma de alojamiento de aplicaciones. | Código, datos, configuración, dependencias y reglas de escalado. | Instancia del plan por tiempo de uso; puede mostrarse una tarifa mensual. | Por verificar. | Por verificar en Mexico Central. | ![App Service](<evidencias/P01/table 3/9.png>) |
+| Azure | Azure Functions | FaaS | Infraestructura de ejecución y escalado según el plan. | Código, dependencias, disparadores, permisos y configuración. | En Consumption: millón de ejecuciones y GB-segundo. | Por verificar. | Por verificar en Mexico Central según plan. | ![Functions](<evidencias/P01/table 3/10.png>) |
+| Azure | Azure Container Apps | Contenedores gestionados | Infraestructura, orquestación y mecanismos de escalado. | Imágenes, configuración, permisos y reglas de escalado. | En Consumption: vCPU-segundo, GiB-segundo y millón de solicitudes. | Por verificar. | Por verificar en Mexico Central. | ![Container Apps](<evidencias/P01/table 3/11.png>) |
+| Azure | Azure SQL Database | Base de datos gestionada | Infraestructura, actualizaciones del motor, respaldos y alta disponibilidad. | Tablas, consultas, datos, usuarios, capacidad y seguridad. | Según modalidad: vCore-hora, vCore-segundo o plan DTU; almacenamiento por GB-mes. | Por verificar. | Por verificar en Mexico Central según modalidad. | ![SQL Database](<evidencias/P01/table 3/12.png>) |
+| Azure | Azure Blob Storage | Almacenamiento de objetos | Infraestructura, almacenamiento y replicación según la opción elegida. | Contenedores, archivos, permisos, nivel de acceso y ciclo de vida. | GB-mes, operaciones y transferencia según uso. | Por verificar. | Por verificar en Mexico Central. | ![Blob Storage](<evidencias/P01/table 3/13.png>) |
+| Azure | Azure OpenAI | IA gestionada | Alojamiento de modelos e infraestructura de inferencia. | Modelo, implementación, prompts, datos, permisos e integración. | En pago por uso: millón de tokens de entrada y salida, según modelo. | Por verificar. | No esta disponible. | ![Azure OpenAI](<evidencias/P01/table 3/14.png>) |
 
 
 
-
-## 4. Características esenciales del NIST comprobadas en la consola (Actividad B2)
+## 5. Características esenciales del NIST comprobadas en la consola (Actividad B2)
 
 A continuación se evidencian las 5 características esenciales definidas por NIST SP 800-145:
 
@@ -222,7 +221,7 @@ El consumo de recursos se monitorea, controla y mide de forma cuantitativa y tra
 
 ---
 
-## 5. Auditoría de inventario en cero y facturación (Actividad B3)
+## 6. Auditoría de inventario en cero y facturación (Actividad B3)
 
 Se auditó la infraestructura en todas las regiones para garantizar que no existan recursos cobrables encendidos:
 
@@ -259,7 +258,7 @@ Se auditó la infraestructura en todas las regiones para garantizar que no exist
 
 ---
 
-## 6. Preguntas de análisis
+## 7. Preguntas de análisis
 
 ### 1. ¿Conviene una cuenta compartida del equipo o una por integrante? Comparar riesgos y ventajas en costos y en seguridad.
 Conviene utilizar una cuenta central compartida administrada bajo un esquema de organización (como AWS Organizations o grupos de recursos en Azure con control de acceso RBAC), o bien mantener cuentas individuales para experimentación aislada y una sola cuenta oficial para el proyecto. Tener una sola cuenta compartida con una única credencial raíz expone al equipo a un riesgo crítico de seguridad: si un integrante filtra la clave o sube accidentalmente las credenciales a GitHub, todo el entorno y la tarjeta asociada quedan comprometidos. Por otro lado, tener cuentas totalmente separadas sin supervisión fragmenta los presupuestos y complica el monitoreo del gasto acumulado. La mejor práctica observada consiste en delegar privilegios mínimos a cada integrante mediante identidades federadas (IAM/Entra ID) manteniendo un presupuesto consolidado y centralizado con alertas activas.
@@ -290,7 +289,7 @@ Estos cambios de políticas demuestran que las capas gratuitas son incentivos co
 
 ---
 
-## 7. Lista de verificación de seguridad y costos
+## 8. Lista de verificación de seguridad y costos
 
 - [x] Las alertas de presupuesto de 5 USD están configuradas y activas en todas las cuentas del equipo.
 - [x] En AWS se configuró y verificó adicionalmente el presupuesto de gasto cero (*Zero spend budget*).
@@ -301,7 +300,7 @@ Estos cambios de políticas demuestran que las capas gratuitas son incentivos co
 
 ---
 
-## 8. Conclusiones y Referencias
+## 9. Conclusiones y Referencias
 
 ### Conclusiones
 La realización de esta práctica permitió comprender que la administración de sistemas distribuidos y cómputo en la nube exige una responsabilidad técnica y financiera estricta desde el primer momento. La característica de *servicio medido* del cómputo en la nube representa una gran ventaja para la elasticidad de costos, pero demanda la adopción inmediata de prácticas FinOps como la parametrización de presupuestos y umbrales preventivos para evitar cobros inesperados (*bill shock*).
@@ -316,13 +315,13 @@ La realización de esta práctica permitió comprender que la administración de
 
 ---
 
-## 9. Sección obligatoria: «Uso de IA»
+## 10. Sección obligatoria: «Uso de IA»
 * **Herramienta utilizada:** Gemini (Google)
 * **Finalidad y alcance del apoyo:** Se utilizó como asistente para estructurar la plantilla del reporte en formato Markdown, guía para la configuración de alertas/presupuestos y resolver dudas de autenticación en las consolas de AWS y Azure. Capturas y cifras fueron verificados y validados manualmente por nosotros.
 
 ---
 
-## 10. Tabla de contribución del equipo
+## 11. Tabla de contribución del equipo
 
 | Sección | Responsable | Entregables Principales | Aportación |
 | :--- | :--- | :--- | :--- |
