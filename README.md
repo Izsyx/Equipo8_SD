@@ -32,21 +32,27 @@ A continuación se detallan las cuentas configuradas en las plataformas de nube 
 
 #### Amazon Web Services (AWS)
 
+## 1. Reconocimiento de consola y facturación (Actividad A1)
+
+### Israel Márquez
+
+#### Amazon Web Services (AWS)
+
 **1. Identificador de cuenta (12 dígitos):**
 
-![A1 AWS ID](evidencias/P01/P01_A1_aws_israel_1.png)
+![A1 AWS ID Israel](evidencias/P01/P01_A1_aws_israel_1.png)
 
 <br>
 
 **2. Región México (Querétaro `mx-central-1`):**
 
-![A1 AWS Región](evidencias/P01/P01_A1_aws_israel_2.png)
+![A1 AWS Región Israel](evidencias/P01/P01_A1_aws_israel_2.png)
 
 <br>
 
 **3. Facturación actual ($0.00 USD) y saldo de créditos:**
 
-![A1 AWS Créditos](evidencias/P01/P01_A1_aws_israel_3.png)
+![A1 AWS Créditos Israel](evidencias/P01/P01_A1_aws_israel_3.png)
 
 <br>
 
@@ -54,71 +60,102 @@ A continuación se detallan las cuentas configuradas en las plataformas de nube 
 
 **1. Identificador de suscripción (Azure for Students):**
 
-![A1 Azure ID](evidencias/P01/P01_A1_azure_israel_1.png)
+![A1 Azure ID Israel](evidencias/P01/P01_A1_azure_israel_1.png)
 
 <br>
 
 **2. Región México (`Mexico Central`):**
 
-![A1 Azure Región](evidencias/P01/P01_A1_azure_israel_2.png)
+![A1 Azure Región Israel](evidencias/P01/P01_A1_azure_israel_2.png)
 
 <br>
 
 **3. Facturación actual ($0.00 USD) y créditos educativos:**
 
-![A1 Azure Créditos](evidencias/P01/P01_A1_azure_israel_3.png)
+![A1 Azure Créditos Israel](evidencias/P01/P01_A1_azure_israel_3.png)
+
+<br>
+
+### Salvador Sandoval Garibay
+
+#### Evidencias de reconocimiento de consola y facturación
+
+**1. Captura de evidencia:**
+
+![A1 Salvador 1](evidencias/P01/salvador/1.png)
+
+<br>
+
+**2. Captura de evidencia:**
+
+![A1 Salvador 2](evidencias/P01/salvador/1.1.png)
+
+<br>
+
+**3. Captura de evidencia:**
+
+![A1 Salvador 3](evidencias/P01/salvador/1.2.png)
+
+<br>
+
+**4. Captura de evidencia:**
+
+![A1 Salvador 4](evidencias/P01/salvador/1.3.png)
 
 ---
 
 ## 2. Configuración de alertas de presupuesto (Actividad A2)
 
-Se establecieron los presupuestos obligatorios y umbrales preventivos en ambos proveedores:
+### Israel Márquez
 
-* **En AWS:**
-  1. Presupuesto de costo cero (`P1-israel-aws-cero`) para alertar ante cualquier consumo que exceda la capa gratuita (> $0.01 USD).
+Se establecieron los presupuestos y umbrales preventivos en ambos proveedores:
+
+- **En AWS:**
+  1. Presupuesto de costo cero (`P1-israel-aws-cero`) para alertar cuando el costo supere $0.01 USD.
   2. Presupuesto mensual de $5.00 USD (`P1-israel-aws`) con cuatro umbrales: 50% real ($2.50 USD), 80% real ($4.00 USD), 100% real ($5.00 USD) y 100% pronóstico (*forecasted*).
-* **En Azure:**
-  1. Presupuesto mensual de $5.00 USD (`P1-israel-azure`) vinculado a la suscripción de estudiante, con umbrales idénticos del 50%, 80%, 100% de gasto real y 100% proyectado.
 
-### Evidencias de Presupuestos y Alertas
+- **En Azure:**
+  1. Presupuesto mensual de $5.00 USD (`P1-israel-azure`) vinculado a la suscripción de estudiante, con umbrales del 50%, 80% y 100% de gasto real, y 100% proyectado.
 
-#### Amazon Web Services (AWS)
+#### Evidencias de presupuestos y alertas en AWS
 
 **1. Lista de presupuestos con gasto actual en $0.00 USD:**
 
-![A2 AWS Presupuestos](evidencias/P01/P01_A2_aws_israel_1.png)
+![A2 AWS Presupuestos Israel](evidencias/P01/P01_A2_aws_israel_1.png)
 
 <br>
 
-**2. Detalle del presupuesto de 5 USD con los 4 umbrales y correo:**
+**2. Detalle del presupuesto de $5.00 USD con los cuatro umbrales y correo:**
 
-![A2 AWS Umbrales](evidencias/P01/P01_A2_aws_israel_2.png)
+![A2 AWS Umbrales Israel](evidencias/P01/P01_A2_aws_israel_2.png)
 
 <br>
 
 **3. Evidencia viva de monitoreo continuo (Estado OK):**
 
-![A2 AWS Estado OK](evidencias/P01/P01_A2_aws_israel_3.png)
+![A2 AWS Estado OK Israel](evidencias/P01/P01_A2_aws_israel_3.png)
 
 <br>
 
-#### Microsoft Azure
+### Salvador Sandoval Garibay
 
-**1. Lista de presupuestos con costo actual en $0.00 USD:**
+#### Evidencias de presupuestos y alertas
 
-![A2 Azure Presupuestos](evidencias/P01/P01_A2_azure_israel_1.png)
+**1. Captura de evidencia:**
 
-<br>
-
-**2. Detalle del presupuesto con los 4 umbrales:**
-
-![A2 Azure Umbrales](evidencias/P01/P01_A2_azure_israel_2.png)
+![A2 Salvador 1](evidencias/P01/salvador/2.png)
 
 <br>
 
-**3. Evidencia viva de monitoreo continuo en Cost Management:**
+**2. Captura de evidencia:**
 
-![A2 Azure Estado OK](evidencias/P01/P01_A2_azure_israel_3.png)
+![A2 Salvador 2](evidencias/P01/salvador/2.1.png)
+
+<br>
+
+**3. Captura de evidencia:**
+
+![A2 Salvador 3](evidencias/P01/salvador/2.2.png)
 
 ---
 
