@@ -147,7 +147,7 @@ Se establecieron los presupuestos y umbrales preventivos en ambos proveedores:
 
 <br>
 
-**4. Captura de evidencia:**
+**4. Captura de evidencia: nota:Como se uso para otros fines, se tiene algunos recursos contabilizados, pero ninguno para esta práctica**
 
 ![A2 Salvador 2](evidencias/P01/salvador/2.1.png)
 
