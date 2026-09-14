@@ -10,7 +10,7 @@
 * **Integrantes del equipo:**
   * Israel Márquez Cárdenas (2022300395)
   * Esaul Tellez de la Cruz (2023630692)
-  * Alumno 3 (Boleta)
+  * Salvador Sandoval Garibay (2022630151)
 
 ---
 
@@ -25,8 +25,8 @@ A continuación se detallan las cuentas configuradas en las plataformas de nube 
 | Israel Márquez | Azure | 87d70be2-e280-4fac-81bb-8e620dc4b7ba | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (1 año) | israelisipo@gmail.com |
 | Esaul Tellez de la Cruz | AWS | 528724997695| Cuenta de AWS | Sí (mx-central-1) | $100.00 USD (6 meses) | etellezd1900@alumno.ipn.mx |
 | Esaul Tellez de la Cruz | Azure | 1aaa6fc3-e0a8-48b4-b67b-63db395edde7 | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (12 meses) | etellezd1900@alumno.ipn.mx |
-| Alumno 3 | AWS | 9876-5432-1098 | Cuenta de AWS | Sí (mx-central-1) | $200.00 USD (6 meses) | correo3@ejemplo.com |
-| Alumno 3 | Azure | 11111111-1111-1111-1111-111111111111 | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (12 meses) | correo3@ejemplo.com |
+| Salvador Sandoval Garibay | AWS | 828035972390 | Cuenta de AWS | Sí (mx-central-1) | pago mensual | escomnprueba21@gmail.com|
+| Salvador Sandoval Garibay | Azure | 2edcc1b8-73c6-4c9a-a288-14dd70e1c4f0 | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (12 meses) | ssandovalg2100@alumno.ipn.mx |
 
 ### Evidencias de la Fase 1 (Actividad A1: Reconocimiento de consola y facturación)
 
@@ -305,5 +305,5 @@ La realización de esta práctica permitió comprender que la administración de
 | Sección | Responsable | Entregables Principales | Aportación |
 | :--- | :--- | :--- | :--- |
 | *(Costos y Calculadoras)* | Esaul Tellez de la Cruz | • Estimar la arquitectura de referencia en la calculadora del Proveedor A (AWS) y Proveedor B (Azure) (México vs. EE. UU. = 4 estimaciones).<br>• Realizar la estimación preliminar del proyecto del equipo.<br>• Llenar la Tabla 2 del reporte y exportar los archivos a `evidencias/P01/costos/`.<br>• Redactar respuestas a las Preguntas 2 y 3 (comparativa México vs. EE. UU. y costos ocultos si se apaga la VM). | 33.3% |
-| *(Modelos de Servicio e IA)* | [Nombre de Persona B] | • Realizar la exploración de B1 en el Proveedor A (AWS) y Proveedor B (Azure) (los 14 servicios: IaaS, PaaS, FaaS, contenedores, BD, objetos, IA) sin crear recursos.<br>• Investigar el ejemplo de SaaS (precios y justificación).<br>• Llenar la Tabla 3 del reporte con unidades de cobro y disponibilidad en Querétaro/México.<br>• Redactar respuesta a la Pregunta 4 (modelo ideal para el proyecto). | 33.3% |
+| *(Modelos de Servicio e IA)* | Salvador Sandoval Garibay | • Realizar la exploración de B1 en el Proveedor A (AWS) y Proveedor B (Azure) (los 14 servicios: IaaS, PaaS, FaaS, contenedores, BD, objetos, IA) sin crear recursos.<br>• Investigar el ejemplo de SaaS (precios y justificación).<br>• Llenar la Tabla 3 del reporte con unidades de cobro y disponibilidad en Querétaro/México.<br>• Redactar respuesta a la Pregunta 4 (modelo ideal para el proyecto). | 33.3% |
 | *(NIST, Seguridad y Repositorio)* | Israel Márquez Cárdenas | • Obtener las capturas y redacción de B2: las 5 características del NIST en consola/CLI.<br>• Coordinar B3: revisión de inventario en cero, saldo de créditos y auditoría de seguridad (verificar que ninguna captura muestre llaves o credenciales).<br>• Estructurar el archivo `practicas/P01/README.md`, consolidar la Tabla 1 y redactar las bitácoras (`2026-09-01.md` y `2026-09-08.md`). | 33.4% |
