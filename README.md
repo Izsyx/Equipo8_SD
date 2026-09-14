@@ -25,7 +25,7 @@ A continuación se detallan las cuentas configuradas en las plataformas de nube 
 | Israel Márquez | Azure | 87d70be2-e280-4fac-81bb-8e620dc4b7ba | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (1 año) | israelisipo@gmail.com |
 | Esaul Tellez de la Cruz | AWS | 528724997695| Cuenta de AWS | Sí (mx-central-1) | $100.00 USD (6 meses) | etellezd1900@alumno.ipn.mx |
 | Esaul Tellez de la Cruz | Azure | 1aaa6fc3-e0a8-48b4-b67b-63db395edde7 | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (12 meses) | etellezd1900@alumno.ipn.mx |
-| Salvador Sandoval Garibay | AWS | 828035972390 | Cuenta de AWS | Sí (mx-central-1) | pago mensual | escomnprueba21@gmail.com|
+| Salvador Sandoval Garibay | AWS | 828035972390 | Cuenta de AWS | Sí (mx-central-1) | pago mensual | escomprueba21@gmail.com|
 | Salvador Sandoval Garibay | Azure | 2edcc1b8-73c6-4c9a-a288-14dd70e1c4f0 | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (12 meses) | ssandovalg2100@alumno.ipn.mx |
 
 ### Evidencias de la Fase 1 (Actividad A1: Reconocimiento de consola y facturación)
