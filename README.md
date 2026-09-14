@@ -161,6 +161,28 @@ Se estimó la arquitectura de referencia compuesta por:
 
 ---
 
+## 4. Identificación de modelos de servicio en la consola (Actividad B1)
+
+| Proveedor | Servicio | Modelo | Qué administra el proveedor | Qué administras tú | Unidad de cobro | Capa gratuita | Disponible en México | Captura de evidencia |
+|---|---|---|---|---|---|---|---|---|
+| AWS | Amazon EC2 | IaaS | Hardware, red física y virtualización. | Sistema operativo, parches, aplicaciones, datos y seguridad. | Instancia por hora o segundo, según configuración. | Por verificar. | Por verificar en mx-central-1. | ![Precios y disponibilidad de EC2](URL_IMAGEN) |
+| AWS | Elastic Beanstalk | PaaS | Aprovisionamiento del entorno, balanceo, escalado y monitoreo. | Código, datos, configuración y políticas de actualización. | Sin cargo adicional por Beanstalk; se cobran los recursos utilizados. | Por verificar en los recursos utilizados. | Por verificar en mx-central-1. | ![Precios y disponibilidad de Beanstalk](URL_IMAGEN) |
+| AWS | AWS Lambda | FaaS | Servidores, infraestructura de ejecución y escalado. | Código, dependencias, memoria, permisos y disparadores. | Millón de solicitudes y GB-segundo de ejecución. | Por verificar. | Por verificar en mx-central-1. | ![Precios y disponibilidad de Lambda](URL_IMAGEN) |
+| AWS | Amazon ECS con Fargate | Contenedores gestionados | Servidores y ejecución de contenedores. | Imágenes, tareas, servicios, red, permisos y reglas de escalado. | vCPU-segundo y GB-segundo de memoria asignada. | Por verificar. | Por verificar en mx-central-1. | ![Precios y disponibilidad de Fargate](URL_IMAGEN) |
+| AWS | Amazon RDS para PostgreSQL | Base de datos gestionada | Infraestructura, mantenimiento del motor y mecanismos de respaldo y recuperación. | Esquemas, consultas, datos, usuarios y configuración de respaldos y disponibilidad. | Instancia por hora y almacenamiento por GB-mes. | Por verificar. | Por verificar en mx-central-1. | ![Precios y disponibilidad de RDS](URL_IMAGEN) |
+| AWS | Amazon S3 | Almacenamiento de objetos | Infraestructura, durabilidad y disponibilidad del almacenamiento. | Objetos, buckets, permisos, clases de almacenamiento y ciclo de vida. | GB-mes, solicitudes y transferencia según uso. | Por verificar. | Por verificar en mx-central-1. | ![Precios y disponibilidad de S3](URL_IMAGEN) |
+| AWS | Amazon Bedrock | IA gestionada | Infraestructura de inferencia y alojamiento de modelos. | Modelo, prompts, datos, permisos e integración. | Tokens de entrada y salida, según modelo y modalidad. | Por verificar. | Por verificar según modelo y modalidad. | ![Precios y disponibilidad de Bedrock](URL_IMAGEN) |
+| Azure | Azure Virtual Machines | IaaS | Hardware, red física y virtualización. | Sistema operativo, parches, aplicaciones, datos y seguridad. | Tiempo de ejecución, con tarifa por hora según tamaño. | Por verificar. | Por verificar en Mexico Central. | ![Precios y disponibilidad de Virtual Machines](URL_IMAGEN) |
+| Azure | Azure App Service | PaaS | Infraestructura y plataforma de alojamiento de aplicaciones. | Código, datos, configuración, dependencias y reglas de escalado. | Instancia del plan por tiempo de uso; puede mostrarse una tarifa mensual. | Por verificar. | Por verificar en Mexico Central. | ![Precios y disponibilidad de App Service](URL_IMAGEN) |
+| Azure | Azure Functions | FaaS | Infraestructura de ejecución y escalado según el plan. | Código, dependencias, disparadores, permisos y configuración. | En Consumption: millón de ejecuciones y GB-segundo. | Por verificar. | Por verificar en Mexico Central según plan. | ![Precios y disponibilidad de Functions](URL_IMAGEN) |
+| Azure | Azure Container Apps | Contenedores gestionados | Infraestructura, orquestación y mecanismos de escalado. | Imágenes, configuración, permisos y reglas de escalado. | En Consumption: vCPU-segundo, GiB-segundo y millón de solicitudes. | Por verificar. | Por verificar en Mexico Central. | ![Precios y disponibilidad de Container Apps](URL_IMAGEN) |
+| Azure | Azure SQL Database | Base de datos gestionada | Infraestructura, actualizaciones del motor, respaldos y alta disponibilidad. | Tablas, consultas, datos, usuarios, capacidad y seguridad. | Según modalidad: vCore-hora, vCore-segundo o plan DTU; almacenamiento por GB-mes. | Por verificar. | Por verificar en Mexico Central según modalidad. | ![Precios y disponibilidad de SQL Database](URL_IMAGEN) |
+| Azure | Azure Blob Storage | Almacenamiento de objetos | Infraestructura, almacenamiento y replicación según la opción elegida. | Contenedores, archivos, permisos, nivel de acceso y ciclo de vida. | GB-mes, operaciones y transferencia según uso. | Por verificar. | Por verificar en Mexico Central. | ![Precios y disponibilidad de Blob Storage](URL_IMAGEN) |
+| Azure | Azure OpenAI | IA gestionada | Alojamiento de modelos e infraestructura de inferencia. | Modelo, implementación, prompts, datos, permisos e integración. | En pago por uso: millón de tokens de entrada y salida, según modelo. | Por verificar. | Por verificar según modelo y tipo de implementación. | ![Precios y disponibilidad de Azure OpenAI](URL_IMAGEN) |
+
+
+
+
 ## 4. Características esenciales del NIST comprobadas en la consola (Actividad B2)
 
 A continuación se evidencian las 5 características esenciales definidas por NIST SP 800-145:
