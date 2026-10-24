@@ -18,7 +18,7 @@ Ofrece recursos de infraestructura bajo demanda, como máquinas virtuales, almac
 | **Caso de uso recomendado** | Migrar una aplicación empresarial que requiere un sistema operativo específico y control sobre la configuración del servidor. |
 | **Limitación** | Requiere conocimientos de administración de sistemas y mantenimiento continuo. |
 
-**Servicios reales:**
+**Servicios:**
 
 - **AWS:** Amazon EC2.
 - **Microsoft Azure:** Azure Virtual Machines.
@@ -37,7 +37,7 @@ Proporciona un entorno administrado para desarrollar, desplegar y ejecutar aplic
 | **Caso de uso recomendado** | Publicar una aplicación web o API cuando el equipo necesita concentrarse en desarrollar funcionalidades. |
 | **Limitación** | Los lenguajes, versiones y configuraciones disponibles dependen de la plataforma. |
 
-**Servicios reales:**
+**Servicios:**
 
 - **AWS:** AWS Elastic Beanstalk.
 - **Microsoft Azure:** Azure App Service.
@@ -57,7 +57,7 @@ Entrega una aplicación terminada que se utiliza por internet, normalmente media
 | **Caso de uso recomendado** | Incorporar correo electrónico, colaboración o gestión de clientes sin desarrollar un sistema propio. |
 | **Limitación** | La personalización y el control sobre el funcionamiento interno son limitados. |
 
-**Servicios reales:**
+**Servicios:**
 
 - **Microsoft:** Microsoft 365.
 - **Google:** Google Workspace.
@@ -76,7 +76,7 @@ Permite ejecutar funciones de código en respuesta a eventos, como solicitudes H
 | **Caso de uso recomendado** | Generar una miniatura automáticamente cuando se carga una imagen en un almacenamiento en la nube. |
 | **Limitación** | Los límites de ejecución y los posibles arranques en frío pueden afectar tareas prolongadas o sensibles a la latencia. |
 
-**Servicios reales:**
+**Servicios:**
 
 - **AWS:** AWS Lambda.
 - **Microsoft Azure:** Azure Functions.
@@ -95,7 +95,7 @@ Ofrece un entorno para desplegar y administrar aplicaciones empaquetadas en cont
 | **Caso de uso recomendado** | Ejecutar microservicios que necesitan portabilidad, escalamiento independiente y control sobre sus despliegues. |
 | **Limitación** | Requiere conocimientos de contenedores, redes y orquestación. |
 
-**Servicios reales:**
+**Servicios:**
 
 - **AWS:** Amazon Elastic Kubernetes Service — EKS.
 - **Microsoft Azure:** Azure Kubernetes Service — AKS.
@@ -115,7 +115,7 @@ Proporciona una base de datos administrada. El proveedor se encarga de buena par
 | **Caso de uso recomendado** | Almacenar pedidos y clientes de una tienda en línea sin operar directamente los servidores de base de datos. |
 | **Limitación** | Puede restringir extensiones, configuraciones avanzadas y acceso administrativo al motor. |
 
-**Servicios reales:**
+**Servicios:**
 
 - **AWS:** Amazon RDS.
 - **Microsoft Azure:** Azure SQL Database.
@@ -135,7 +135,7 @@ Ofrece capacidades de inteligencia artificial mediante APIs o plataformas admini
 | **Caso de uso recomendado** | Integrar un asistente que responda preguntas sobre documentos empresariales sin construir un modelo desde cero. |
 | **Limitación** | Los resultados pueden contener errores y requieren evaluación antes de utilizarse en decisiones importantes. |
 
-**Servicios reales:**
+**Servicios:**
 
 - **AWS:** Amazon Bedrock.
 - **Microsoft Azure:** Azure OpenAI.
@@ -155,7 +155,7 @@ Es un concepto general que agrupa la entrega de capacidades tecnológicas como s
 | **Caso de uso recomendado** | Combinar infraestructura, aplicaciones y bases de datos contratadas como servicios para reducir la operación de recursos propios. |
 | **Limitación** | La combinación de servicios puede aumentar la dependencia de proveedores y la complejidad de integración y costos. |
 
-**Servicios reales que pertenecen a XaaS:**
+**Servicios:**
 
 - **AWS:** Amazon EC2, como ejemplo de IaaS.
 - **Microsoft:** Microsoft 365, como ejemplo de SaaS.
