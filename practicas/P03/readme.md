@@ -470,7 +470,3 @@ Para verificar el acceso público se abriría `http://IP_PUBLICA_REAL` en Firefo
 **Figura 4.3. Página de bienvenida de Nginx en Firefox.**
 
 ![Página de bienvenida de Nginx en Firefox con una IP de ejemplo](ejercicio/iaas/3-nginx-firefox.png)
-
-### 4.6. Resultado y evidencias pendientes
-
-Se cuenta con tres ilustraciones del proceso previsto. Para completar el laboratorio solicitado faltan desplegar la VM con beneficios gratuitos verificados, aplicar las reglas de seguridad, conectarse por SSH, instalar Nginx y comprobar su respuesta desde una IP pública real. Después deben incorporarse capturas de esa ejecución.
