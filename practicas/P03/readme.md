@@ -292,3 +292,125 @@ La disponibilidad de regiones en México facilita almacenar y procesar datos den
 El edge computing ofrece ventajas cuando se requieren respuestas rápidas, se generan grandes volúmenes de información o la conexión a internet es inestable. En la industria manufacturera, permite analizar imágenes de productos junto a la línea de producción y detectar defectos sin enviar todo el video a una nube central. En la industria energética, permite procesar mediciones de paneles solares, baterías o instalaciones remotas cerca de su origen y enviar únicamente los datos necesarios a la nube. En ambos casos, disminuye la latencia y el consumo de ancho de banda. La nube central complementa este procesamiento con análisis históricos, almacenamiento y coordinación entre instalaciones.
 
 
+## Ejercicio 3: Exploración de servicios en AWS y Microsoft Azure
+
+Se seleccionaron **Amazon Web Services (AWS)** y **Microsoft Azure**. Las evidencias proporcionadas muestran las consolas de ambos proveedores y un servicio representativo de cada modelo solicitado. La numeración de los archivos corresponde a: **1 = IaaS, 2 = PaaS, 3 = FaaS, 4 = CaaS, 5 = DBaaS y 6 = AIaaS**.
+
+Las capturas documentan la localización de los servicios y sus formularios o paneles; no acreditan el despliegue de recursos. Las condiciones de gratuidad se consultaron en la documentación oficial el **24 de octubre de 2026**. Una cuota gratuita, un crédito temporal y la administración sin costo de un servicio son beneficios distintos; los recursos adicionales pueden generar cargos.
+
+### 3.1. Paneles de inicio de los proveedores
+
+Las imágenes disponibles corresponden a servicios específicos. **Quedan pendientes las dos capturas del panel de inicio general**, una de AWS Console Home y otra de Azure Home o Dashboard. El panel de Lambda y el listado de máquinas virtuales no sustituyen estas evidencias.
+
+### 3.2. AWS: servicios, capa gratuita y aplicaciones reales
+
+| Evidencia | Nombre del servicio | Categoría | ¿Tiene capa gratuita? | ¿Para qué lo usaría en un proyecto real? |
+|---|---|---|---|---|
+| 1 | Amazon EC2 | IaaS | **Prueba mediante créditos**, para cuentas nuevas elegibles del programa AWS Free Tier; no es una VM gratuita permanente. El programa ofrece hasta USD 200 y un plan gratuito de hasta seis meses, sujeto al saldo y condiciones. [AWS Free Tier](https://aws.amazon.com/free/). | Alojar un servidor Linux para una aplicación que requiere instalar paquetes y configurar directamente el sistema operativo. |
+| 2 | AWS Elastic Beanstalk | PaaS | **La plataforma no tiene cargo adicional**, pero se cobran recursos como EC2, almacenamiento y balanceadores. Su costo puede quedar cubierto por beneficios elegibles de Free Tier. [Precios de Beanstalk](https://aws.amazon.com/elasticbeanstalk/pricing/). | Publicar una aplicación web de reservaciones y delegar el aprovisionamiento y escalamiento de su entorno. |
+| 3 | AWS Lambda | FaaS | **Sí:** incluye un millón de solicitudes y 400,000 GB-segundo de cómputo al mes dentro de las condiciones de su capa gratuita. Las integraciones pueden cobrarse por separado. [Precios de Lambda](https://aws.amazon.com/lambda/pricing/). | Generar miniaturas cuando los usuarios cargan fotografías a un bucket de S3. |
+| 4 | Amazon Elastic Kubernetes Service (EKS) | CaaS | **No tiene una capa permanente gratuita del clúster administrado.** Se cobra por el clúster y por los recursos utilizados para ejecutar las cargas de trabajo. [Precios de EKS](https://aws.amazon.com/eks/pricing/). | Ejecutar los microservicios de catálogo, pedidos e inventario de una tienda mediante Kubernetes. |
+| 5 | Amazon Relational Database Service (RDS) | DBaaS | **Prueba mediante créditos** para cuentas nuevas elegibles. La oferta anterior de instancias gratuitas durante 12 meses correspondía a cuentas creadas antes del 15 de julio de 2025; no debe asumirse para cuentas nuevas. [Oferta de RDS](https://aws.amazon.com/rds/free/). | Guardar clientes, productos y pedidos en una base relacional administrada, con mecanismos de respaldo. |
+| 6 | Amazon Bedrock | AIaaS | **Sin cuota gratuita general permanente de inferencia.** El cobro depende del modelo y la modalidad de uso; los créditos promocionales, cuando apliquen, son un beneficio temporal. [Precios de Bedrock](https://aws.amazon.com/bedrock/pricing/). | Integrar un asistente que responda preguntas sobre manuales internos utilizando modelos generativos y documentos del proyecto. |
+
+#### Evidencia 1. Amazon EC2 — IaaS
+
+La sección **EC2 → Instancias** muestra el listado de máquinas virtuales y la opción para lanzar una instancia.
+
+![AWS: listado de instancias de Amazon EC2](evidencia/1-aws.png)
+
+#### Evidencia 2. AWS Elastic Beanstalk — PaaS
+
+La sección **Elastic Beanstalk → Aplicaciones** permite consultar aplicaciones y acceder a la creación de una nueva.
+
+![AWS: aplicaciones de Elastic Beanstalk](evidencia/2-aws.png)
+
+#### Evidencia 3. AWS Lambda — FaaS
+
+El panel de **Lambda** presenta funciones de eventos, métricas y la opción para crear una función.
+
+![AWS: panel de funciones de Lambda](evidencia/3-aws.png)
+
+#### Evidencia 4. Amazon EKS — CaaS
+
+La sección **Amazon Elastic Kubernetes Service → Clústeres** muestra el listado de clústeres administrados.
+
+![AWS: listado de clústeres de Amazon EKS](evidencia/4-aws.png)
+
+#### Evidencia 5. Amazon RDS — DBaaS
+
+La sección **Aurora and RDS → Bases de datos** permite consultar y crear bases de datos administradas. El servicio elegido para la comparación es Amazon RDS.
+
+![AWS: bases de datos en Aurora and RDS](evidencia/5-aws.png)
+
+#### Evidencia 6. Amazon Bedrock — AIaaS
+
+La página **Amazon Bedrock → Información general** muestra acceso al catálogo de modelos y herramientas de prueba. En la barra superior aparece seleccionada la región **México (Central)**.
+
+![AWS: información general de Amazon Bedrock con México Central seleccionado](evidencia/6-aws.png)
+
+### 3.3. Microsoft Azure: servicios, capa gratuita y aplicaciones reales
+
+Las capturas muestran la suscripción **Azure for Students**. Los beneficios generales descritos a continuación no garantizan que todas las ofertas puedan activarse en esa suscripción: su elegibilidad y los planes disponibles deben verificarse al configurar cada recurso.
+
+| Evidencia | Nombre del servicio | Categoría | ¿Tiene capa gratuita? | ¿Para qué lo usaría en un proyecto real? |
+|---|---|---|---|---|
+| 1 | Azure Virtual Machines | IaaS | **Sí, temporal y limitada**, para tamaños de VM y cuentas nuevas elegibles dentro de la oferta de servicios gratuitos por 12 meses. No incluye cualquier tamaño ni todos los recursos asociados. [Servicios gratuitos de Azure](https://azure.microsoft.com/en-us/free/). | Ejecutar una aplicación institucional que necesita control sobre Windows o Linux y su configuración de red. |
+| 2 | Azure App Service | PaaS | **Sí**, mediante el nivel Free/F1, con recursos compartidos y cuotas para desarrollo y pruebas. Su disponibilidad depende de la configuración y región. [Servicios gratuitos de Azure](https://azure.microsoft.com/en-us/free/). | Publicar un portal de citas con su API sin administrar directamente el sistema operativo del servidor. |
+| 3 | Azure Functions | FaaS | **Sí, según el plan y la suscripción.** Consumption ofrece un millón de ejecuciones y 400,000 GB-segundo mensuales en suscripciones elegibles de pago por uso. Flex Consumption tiene cuotas distintas; el almacenamiento se cobra por separado. [Precios de Functions](https://azure.microsoft.com/en-us/pricing/details/functions/). | Procesar eventos de una cola para actualizar el estado de pedidos y generar notificaciones. |
+| 4 | Azure Kubernetes Service (AKS) | CaaS | **Sí, parcialmente:** el nivel Free no cobra la administración del clúster; los nodos y otros recursos consumidos sí tienen costo. [Precios de AKS](https://azure.microsoft.com/en-us/pricing/details/kubernetes-service/). | Desplegar servicios de autenticación, catálogo y ventas en contenedores con escalamiento independiente. |
+| 5 | Azure SQL Database | DBaaS | **Sí, bajo la oferta gratuita:** hasta 10 bases por suscripción, cada una con 100,000 segundos de vCore, 32 GB de datos y 32 GB de respaldo mensuales, sujeto a elegibilidad. La captura muestra el anuncio de esta oferta, no su activación. [Oferta gratuita de SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-tier?view=azuresql). | Almacenar usuarios, citas y pagos de un sistema administrativo en una base relacional administrada. |
+| 6 | Azure OpenAI, mostrado dentro de Microsoft Foundry | AIaaS | **Sin capa gratuita general permanente para la API.** Se factura por consumo o capacidad aprovisionada, según el modelo y despliegue; los créditos de una suscripción no equivalen a una cuota gratuita del servicio. [Precios de Azure OpenAI](https://azure.microsoft.com/en-us/pricing/details/azure-openai/). | Crear un asistente para consultar documentos institucionales y redactar borradores de respuestas que revise una persona. |
+
+#### Evidencia 1. Azure Virtual Machines — IaaS
+
+La sección **Compute infrastructure → Virtual machines** muestra el listado de máquinas virtuales de la suscripción.
+
+![Azure: listado de Virtual Machines](evidencia/1-azure.png)
+
+#### Evidencia 2. Azure App Service — PaaS
+
+El formulario **App Services → Create Web App** permite configurar una aplicación web. El campo **Region** muestra **Mexico Central**.
+
+![Azure: creación de una Web App en App Service](evidencia/2-azure.png)
+
+#### Evidencia 3. Azure Functions — FaaS
+
+La sección **Function App** muestra el listado de aplicaciones de funciones y la opción de creación.
+
+![Azure: listado de Function App](evidencia/3-azure.png)
+
+#### Evidencia 4. Azure Kubernetes Service — CaaS
+
+El formulario **Create Kubernetes cluster** corresponde a AKS. El campo **Region** muestra **(Mexico) Mexico Central**.
+
+![Azure: creación de un clúster de AKS](evidencia/4-azure.png)
+
+#### Evidencia 5. Azure SQL Database — DBaaS
+
+El formulario **Create SQL Database** presenta la configuración de una base de datos y un anuncio con las cuotas de la oferta gratuita.
+
+![Azure: creación de SQL Database y anuncio de la oferta gratuita](evidencia/5-azure.png)
+
+#### Evidencia 6. Azure OpenAI — AIaaS
+
+La sección **Microsoft Foundry → Azure OpenAI** muestra el listado de recursos del servicio de inteligencia artificial.
+
+![Azure: listado de recursos de Azure OpenAI en Microsoft Foundry](evidencia/6-azure.png)
+
+### 3.4. Identificación de las regiones de México
+
+| Proveedor | Región mexicana | Identificador | Evidencia disponible |
+|---|---|---|---|
+| AWS | Mexico (Central), visible como **México (Central)** en la consola | `mx-central-1` | En `6-aws.png` aparece seleccionada en la esquina superior derecha. |
+| Microsoft Azure | **Mexico Central**, ubicada en Querétaro | `mexicocentral` | En `2-azure.png` y `4-azure.png` aparece seleccionada en el campo Region. |
+
+Los nombres e identificadores se corroboraron en el [listado oficial de regiones de AWS](https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html) y el [listado oficial de regiones de Azure](https://learn.microsoft.com/en-us/azure/reliability/regions-list). La disponibilidad de una región no implica que todos los servicios, modelos de IA o planes gratuitos estén disponibles en ella.
+
+**Evidencias de la región seleccionada:**
+
+![Región de AWS: México Central seleccionada en la consola de Bedrock](evidencia/6-aws.png)
+
+![Región de Azure: Mexico Central seleccionada en el formulario de AKS](evidencia/4-azure.png)
+
+**Pendiente para cubrir literalmente la consigna:** agregar una captura por proveedor con el menú de regiones desplegado y la opción mexicana visible. Las imágenes anteriores muestran el valor seleccionado, pero no la lista abierta. En AWS se abre desde el selector superior; en Azure se abre el campo Region de un formulario de creación, como App Service o AKS, sin necesidad de desplegar el recurso.
