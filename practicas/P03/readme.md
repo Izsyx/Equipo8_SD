@@ -471,9 +471,7 @@ Para verificar el acceso público se abriría `http://IP_PUBLICA_REAL` en Firefo
 
 ![Página de bienvenida de Nginx en Firefox con una IP de ejemplo](ejercicio/iaas/3-nginx-firefox.png)
 
-## Actividad 5: Análisis del mercado cloud y reflexión (Trabajo autónomo)
-
-**Duración asignada:** 1 hora. **Tipo:** Individual. **Evidencia:** Ensayo. **Fecha de consulta:** 24 de octubre de 2026.
+# Actividad 5: Análisis del mercado cloud y reflexión (Trabajo autónomo)
 
 ### El mercado cloud, la inteligencia artificial y las oportunidades para México
 
