@@ -294,9 +294,7 @@ El edge computing ofrece ventajas cuando se requieren respuestas rápidas, se ge
 
 ## Ejercicio 3: Exploración de servicios en AWS y Microsoft Azure
 
-Se seleccionaron **Amazon Web Services (AWS)** y **Microsoft Azure**. Las evidencias proporcionadas muestran las consolas de ambos proveedores y un servicio representativo de cada modelo solicitado. La numeración de los archivos corresponde a: **1 = IaaS, 2 = PaaS, 3 = FaaS, 4 = CaaS, 5 = DBaaS y 6 = AIaaS**.
-
-Las capturas documentan la localización de los servicios y sus formularios o paneles; no acreditan el despliegue de recursos. Las condiciones de gratuidad se consultaron en la documentación oficial el **24 de octubre de 2026**. Una cuota gratuita, un crédito temporal y la administración sin costo de un servicio son beneficios distintos; los recursos adicionales pueden generar cargos.
+Se seleccionaron **Amazon Web Services (AWS)** y **Microsoft Azure**. Las evidencias proporcionadas muestran las consolas de ambos proveedores y un servicio representativo de cada modelo solicitado. 
 
 ### 3.1. Paneles de inicio de los proveedores
 
