@@ -195,3 +195,15 @@ flowchart TB
     end
 ```
 
+
+| Modelo | Tú gestionas | Proveedor gestiona | Ejemplo AWS | Ejemplo Azure | Ejemplo GCP |
+|---|---|---|---|---|---|
+| **IaaS** | Sistema operativo, parches, aplicaciones, datos y configuración de seguridad. | Hardware, redes físicas, almacenamiento físico y virtualización. | Amazon EC2 | Azure Virtual Machines | Compute Engine |
+| **PaaS** | Código, dependencias, datos y configuración de la aplicación. | Infraestructura y plataforma de ejecución, según la oferta. | AWS Elastic Beanstalk | Azure App Service | App Engine |
+| **SaaS** | Usuarios, permisos, datos y configuración funcional. | Aplicación, plataforma, infraestructura y actualizaciones. | Amazon WorkMail | Microsoft 365¹ | Google Workspace¹ |
+| **FaaS** | Funciones, dependencias, disparadores, permisos e integraciones. | Infraestructura, entorno de ejecución y escalamiento. | AWS Lambda | Azure Functions | Cloud Run functions |
+| **CaaS** | Contenedores, aplicaciones, despliegues y secretos; nodos según la modalidad. | Orquestación administrada e infraestructura según la modalidad. | Amazon EKS | Azure Kubernetes Service | Google Kubernetes Engine |
+| **DBaaS** | Datos, esquemas, consultas, índices, accesos y políticas configurables. | Infraestructura, motor, mantenimiento y mecanismos de respaldo. | Amazon RDS | Azure SQL Database | Cloud SQL |
+| **AIaaS** | Integración, datos, prompts, permisos y evaluación de resultados. | Infraestructura de IA y operación de los modelos o plataforma contratada. | Amazon Bedrock | Azure OpenAI | Vertex AI |
+
+
