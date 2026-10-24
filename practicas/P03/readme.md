@@ -203,7 +203,7 @@ flowchart TB
 | **CaaS** | Contenedores, aplicaciones, despliegues y secretos; nodos según la modalidad. | Orquestación administrada e infraestructura según la modalidad. | Amazon EKS | Azure Kubernetes Service | Google Kubernetes Engine |
 
 
-## Ejercicio 2: 
+## Ejercicio 2: Análisis comparativo de modelos de despliegue 
 
 ### 1.2. Nube privada
 
