@@ -396,3 +396,81 @@ La sección **Microsoft Foundry → Azure OpenAI** muestra el listado de recurso
 
 ![Azure: listado de recursos de Azure OpenAI en Microsoft Foundry](evidencia/6-azure.png)
 
+## Actividad 4: Creación de un recurso en la nube (Laboratorio)
+
+**Duración asignada:** 1.5 horas. **Tipo:** Individual. **Opción elegida:** A — IaaS: crear una máquina virtual.
+
+**Estado: simulación ilustrativa.** Las tres imágenes de esta sección fueron generadas con IA para representar el procedimiento. No acreditan la creación de una VM, una conexión SSH ni la comprobación de un servidor público. La ejecución real y sus evidencias quedan pendientes.
+
+### 4.1. Configuración de la máquina virtual
+
+El escenario propuesto utiliza **Amazon EC2**, con una máquina Linux y Nginx como servidor web. La configuración representada es la siguiente:
+
+| Parámetro | Valor del ejemplo |
+|---|---|
+| Nombre de la instancia | `practica3-web` |
+| Modelo de servicio | IaaS |
+| Sistema operativo | Ubuntu Server 24.04 LTS |
+| Tipo de instancia | `t3.micro` |
+| Almacenamiento | 8 GiB, volumen gp3 |
+| Región | México (Central), `mx-central-1` |
+| Par de claves | `practica3` |
+| Grupo de seguridad | `practica3-sg` |
+| IPv4 pública ilustrativa | `203.0.113.10` |
+| IPv4 privada ilustrativa | `10.0.1.25` |
+
+Para realizar el laboratorio con la capa gratuita, primero debe comprobarse que la cuenta, el tipo de instancia y los recursos asociados estén cubiertos por los beneficios o créditos disponibles. La imagen no demuestra la elegibilidad ni un costo de cero.
+
+### 4.2. Reglas del grupo de seguridad
+
+El ejemplo representa dos reglas de entrada:
+
+| Servicio | Protocolo | Puerto | Origen | Propósito |
+|---|---|---|---|---|
+| SSH | TCP | 22 | IP pública del equipo administrador con máscara `/32`; en la imagen se usa `198.51.100.25/32` como ejemplo. | Administrar la VM desde la terminal. |
+| HTTP | TCP | 80 | `0.0.0.0/0` | Permitir consultar el servidor web desde internet. |
+
+**Figura 4.1. Simulación de la configuración de EC2 y las reglas de entrada.**
+
+![Simulación: configuración de una VM Ubuntu y reglas SSH y HTTP](simulaciones/iaas/1-configuracion-vm.png)
+
+### 4.3. Conexión por SSH
+
+El procedimiento ilustrado protege el archivo de clave y lo utiliza para iniciar una sesión como usuario `ubuntu`. En una ejecución real se sustituye `IP_PUBLICA_REAL` por la dirección asignada a la instancia y se utiliza el archivo de clave correspondiente:
+
+```bash
+chmod 400 ~/Downloads/practica3.pem
+ssh -i ~/Downloads/practica3.pem ubuntu@IP_PUBLICA_REAL
+```
+
+La dirección `203.0.113.10` mostrada en las imágenes es una IP de documentación; no corresponde a una VM creada para esta práctica.
+
+### 4.4. Instalación y comprobación de Nginx
+
+Una vez conectado a la VM real, los comandos del procedimiento son:
+
+```bash
+sudo apt update
+sudo apt install -y nginx
+sudo systemctl enable --now nginx
+systemctl is-active nginx
+curl -I http://localhost
+```
+
+El resultado esperado es `active` al consultar el servicio y una respuesta `HTTP/1.1 200 OK` al consultar el servidor local. La imagen representa estos resultados; los comandos no se ejecutaron en una VM durante la elaboración de esta sección.
+
+**Figura 4.2. Simulación de una sesión SSH con instalación y comprobación local de Nginx.**
+
+![Simulación: sesión SSH e instalación de Nginx desde la terminal](simulaciones/iaas/2-sesion-ssh.png)
+
+### 4.5. Comprobación desde el navegador
+
+Para verificar el acceso público se abriría `http://IP_PUBLICA_REAL` en Firefox. La página de bienvenida de Nginx sería el resultado esperado si el servicio está activo y las reglas de red permiten el acceso HTTP.
+
+**Figura 4.3. Simulación de la página de bienvenida de Nginx en Firefox.**
+
+![Simulación: página de bienvenida de Nginx en Firefox con una IP de ejemplo](simulaciones/iaas/3-nginx-firefox.png)
+
+### 4.6. Resultado y evidencias pendientes
+
+Se cuenta con tres ilustraciones del proceso previsto. Para completar el laboratorio solicitado faltan desplegar la VM con beneficios gratuitos verificados, aplicar las reglas de seguridad, conectarse por SSH, instalar Nginx y comprobar su respuesta desde una IP pública real. Después deben sustituirse las simulaciones por capturas de esa ejecución.
