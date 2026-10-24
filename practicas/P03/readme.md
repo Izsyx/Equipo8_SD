@@ -163,36 +163,35 @@ Es un concepto general que agrupa la entrega de capacidades tecnológicas como s
 
 ```mermaid
 flowchart TB
-    subgraph X["XaaS · Todo como servicio: engloba todos los modelos"]
+    subgraph X["XaaS · Todo como servicio"]
         direction TB
 
-        I["IaaS · Infraestructura"]
-        C["CaaS · Contenedores"]
-        P["PaaS · Plataforma"]
-        S["SaaS · Aplicación terminada"]
+        subgraph ESCALA["Progresión general · Aumenta la abstracción"]
+            direction TB
+            I["IaaS · Infraestructura bajo demanda"]
+            C["CaaS · Orquestación de contenedores"]
+            P["PaaS · Entorno para desarrollar y ejecutar"]
+            S["SaaS · Aplicación lista para utilizar"]
 
-        I -->|"Abstrae infraestructura para contenedores"| C
-        C -->|"Delega más operación del entorno"| P
-        P -->|"Entrega una aplicación completa"| S
+            I -->|"Delega la orquestación"| C
+            C -->|"Delega más operación del entorno"| P
+            P -->|"Delega también el desarrollo del producto"| S
+        end
 
-        F["FaaS · Funciones por eventos"]
-        D["DBaaS · Bases de datos"]
-        A["AIaaS · Capacidades de IA"]
+        subgraph ESP["Servicios especializados · Cercanos a la capa de plataforma"]
+            direction TB
+            F["FaaS · Ejecuta funciones por eventos"]
+            D["DBaaS · Administra motores de bases de datos"]
+            A["AIaaS · Ofrece modelos y plataformas de IA"]
+        end
 
-        P -.->|"Ejecución especializada"| F
-        P -.->|"Plataforma de datos"| D
-        P -.->|"Plataforma o API de IA"| A
-        A -.->|"Se integra en"| S
+        P -.->|"Ejecución de código"| F
+        P -.->|"Gestión de datos"| D
+        P -.->|"Capacidades de IA"| A
+
+        F -.->|"Automatiza tareas de"| S
+        D -.->|"Almacena datos de"| S
+        A -.->|"Añade inteligencia a"| S
     end
-
-    classDef infra fill:#dbeafe,stroke:#2563eb,color:#172554
-    classDef platform fill:#ede9fe,stroke:#7c3aed,color:#2e1065
-    classDef software fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef specialized fill:#fff7ed,stroke:#ea580c,color:#7c2d12
-
-    class I,C infra
-    class P platform
-    class S software
-    class F,D,A specialized
 ```
 
