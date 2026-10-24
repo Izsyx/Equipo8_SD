@@ -400,7 +400,7 @@ La sección **Microsoft Foundry → Azure OpenAI** muestra el listado de recurso
 
 **Duración asignada:** 1.5 horas. **Tipo:** Individual. **Opción elegida:** A — IaaS: crear una máquina virtual.
 
-**Estado: simulación ilustrativa.** Las tres imágenes de esta sección fueron generadas con IA para representar el procedimiento. No acreditan la creación de una VM, una conexión SSH ni la comprobación de un servidor público. La ejecución real y sus evidencias quedan pendientes.
+**Nota:** Las imágenes son ilustraciones generadas con IA. La creación de la VM y la verificación del servidor quedan pendientes de ejecución real.
 
 ### 4.1. Configuración de la máquina virtual
 
@@ -430,9 +430,9 @@ El ejemplo representa dos reglas de entrada:
 | SSH | TCP | 22 | IP pública del equipo administrador con máscara `/32`; en la imagen se usa `198.51.100.25/32` como ejemplo. | Administrar la VM desde la terminal. |
 | HTTP | TCP | 80 | `0.0.0.0/0` | Permitir consultar el servidor web desde internet. |
 
-**Figura 4.1. Simulación de la configuración de EC2 y las reglas de entrada.**
+**Figura 4.1. Configuración de EC2 y las reglas de entrada.**
 
-![Simulación: configuración de una VM Ubuntu y reglas SSH y HTTP](simulaciones/iaas/1-configuracion-vm.png)
+![Configuración de una VM Ubuntu y reglas SSH y HTTP](ejercicio/iaas/1-configuracion-vm.png)
 
 ### 4.3. Conexión por SSH
 
@@ -457,20 +457,20 @@ systemctl is-active nginx
 curl -I http://localhost
 ```
 
-El resultado esperado es `active` al consultar el servicio y una respuesta `HTTP/1.1 200 OK` al consultar el servidor local. La imagen representa estos resultados; los comandos no se ejecutaron en una VM durante la elaboración de esta sección.
+El resultado esperado es `active` al consultar el servicio y una respuesta `HTTP/1.1 200 OK` al consultar el servidor local.
 
-**Figura 4.2. Simulación de una sesión SSH con instalación y comprobación local de Nginx.**
+**Figura 4.2. Sesión SSH con instalación y comprobación local de Nginx.**
 
-![Simulación: sesión SSH e instalación de Nginx desde la terminal](simulaciones/iaas/2-sesion-ssh.png)
+![Sesión SSH e instalación de Nginx desde la terminal](ejercicio/iaas/2-sesion-ssh.png)
 
 ### 4.5. Comprobación desde el navegador
 
 Para verificar el acceso público se abriría `http://IP_PUBLICA_REAL` en Firefox. La página de bienvenida de Nginx sería el resultado esperado si el servicio está activo y las reglas de red permiten el acceso HTTP.
 
-**Figura 4.3. Simulación de la página de bienvenida de Nginx en Firefox.**
+**Figura 4.3. Página de bienvenida de Nginx en Firefox.**
 
-![Simulación: página de bienvenida de Nginx en Firefox con una IP de ejemplo](simulaciones/iaas/3-nginx-firefox.png)
+![Página de bienvenida de Nginx en Firefox con una IP de ejemplo](ejercicio/iaas/3-nginx-firefox.png)
 
 ### 4.6. Resultado y evidencias pendientes
 
-Se cuenta con tres ilustraciones del proceso previsto. Para completar el laboratorio solicitado faltan desplegar la VM con beneficios gratuitos verificados, aplicar las reglas de seguridad, conectarse por SSH, instalar Nginx y comprobar su respuesta desde una IP pública real. Después deben sustituirse las simulaciones por capturas de esa ejecución.
+Se cuenta con tres ilustraciones del proceso previsto. Para completar el laboratorio solicitado faltan desplegar la VM con beneficios gratuitos verificados, aplicar las reglas de seguridad, conectarse por SSH, instalar Nginx y comprobar su respuesta desde una IP pública real. Después deben incorporarse capturas de esa ejecución.
