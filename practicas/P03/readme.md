@@ -398,19 +398,3 @@ La sección **Microsoft Foundry → Azure OpenAI** muestra el listado de recurso
 
 ![Azure: listado de recursos de Azure OpenAI en Microsoft Foundry](evidencia/6-azure.png)
 
-### 3.4. Identificación de las regiones de México
-
-| Proveedor | Región mexicana | Identificador | Evidencia disponible |
-|---|---|---|---|
-| AWS | Mexico (Central), visible como **México (Central)** en la consola | `mx-central-1` | En `6-aws.png` aparece seleccionada en la esquina superior derecha. |
-| Microsoft Azure | **Mexico Central**, ubicada en Querétaro | `mexicocentral` | En `2-azure.png` y `4-azure.png` aparece seleccionada en el campo Region. |
-
-Los nombres e identificadores se corroboraron en el [listado oficial de regiones de AWS](https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html) y el [listado oficial de regiones de Azure](https://learn.microsoft.com/en-us/azure/reliability/regions-list). La disponibilidad de una región no implica que todos los servicios, modelos de IA o planes gratuitos estén disponibles en ella.
-
-**Evidencias de la región seleccionada:**
-
-![Región de AWS: México Central seleccionada en la consola de Bedrock](evidencia/6-aws.png)
-
-![Región de Azure: Mexico Central seleccionada en el formulario de AKS](evidencia/4-azure.png)
-
-**Pendiente para cubrir literalmente la consigna:** agregar una captura por proveedor con el menú de regiones desplegado y la opción mexicana visible. Las imágenes anteriores muestran el valor seleccionado, pero no la lista abierta. En AWS se abre desde el selector superior; en Azure se abre el campo Region de un formulario de creación, como App Service o AKS, sin necesidad de desplegar el recurso.
