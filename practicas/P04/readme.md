@@ -8,8 +8,6 @@
 **Integrantes:** Israel Márquez Cárdenas | Esaul Tellez de la Cruz | Salvador Sandoval Garibay
 **Fecha de elaboración:** 25 de octubre de 2026  
 
-> **Estado de elaboración:** Investigación y análisis preparados. Los campos `[EVIDENCIA REAL PENDIENTE]` no deben rellenarse con valores simulados: requieren capturas, cotizaciones oficiales y/o mediciones obtenidas por el equipo. El PDF de origen se titula *Práctica 4*, aunque sus pies de página y nombre de entrega contienen el número *2*; confirmar la nomenclatura de entrega con el docente.
-
 ## Objetivo
 
 Comparar Amazon Web Services (AWS), Microsoft Azure, Google Cloud (GCP) y Oracle Cloud Infrastructure (OCI) mediante servicios equivalentes, estructura de precios, acuerdos de nivel de servicio, regiones mexicanas y estrategias de migración. Para el proyecto escolar se consideran las necesidades de una Mesa de Ayuda: API web, registro de tickets, almacenamiento de adjuntos, autenticación, disponibilidad y costos controlados.
@@ -82,14 +80,14 @@ Para comparar **AWS, Azure y GCP**, usar la misma arquitectura y periodo:
 
 | Componente, USD/mes | AWS — México Central | Azure — México Central | GCP — Querétaro |
 |---|---:|---:|---:|
-| VM + disco | 41.03 | ≈77.38¹ | 76.53 |
-| Objetos 100 GB | 2.42 | ≈3.44¹ | 4.60 |
-| BD gestionada | 52.06 | ≈137.95¹ | 91.60 |
+| VM + disco | 41.03 | ≈77.38 | 76.53 |
+| Objetos 100 GB | 2.42 | ≈3.44 | 4.60 |
+| BD gestionada | 52.06 | ≈137.95 | 91.60 |
 | Salida a internet | 55.00 | 32.00 | 22.58 |
 | Balanceador | 21.45 | No incluido | 19.99 |
 | **TOTAL mensual cotizado** | **171.96** | **250.76²** | **215.30** |
 
-¹ Azure muestra importes anuales por servicio, convertidos a mensual dividiendo entre 12 y redondeando a dos decimales. La suma de esos valores redondeados es USD 250.77; el resumen muestra USD 250.76, diferencia de USD 0.01 por redondeo. ² El total de Azure es el de la captura y no incluye balanceador. Las cotizaciones tampoco usan configuraciones idénticas: por ejemplo, la captura EC2 muestra 2 vCPU/4 GiB y la de Cloud Storage de GCP usa ubicación multirregional de Estados Unidos.
+ Azure muestra importes anuales por servicio, convertidos a mensual dividiendo entre 12 y redondeando a dos decimales. La suma de esos valores redondeados es USD 250.77; el resumen muestra USD 250.76, diferencia de USD 0.01 por redondeo. ² El total de Azure es el de la captura y no incluye balanceador. Las cotizaciones tampoco usan configuraciones idénticas: por ejemplo, la captura EC2 muestra 2 vCPU/4 GiB y la de Cloud Storage de GCP usa ubicación multirregional de Estados Unidos.
 
 **Evidencias:** insertar las capturas originales de los tres resúmenes, indicando fecha, región, moneda, SKU y costos por servicio:
 
@@ -291,7 +289,10 @@ Valores transcritos de las capturas adjuntas. La columna de EE. UU. identifica l
 
 ### 5.4 Proveedor recomendado
 
-Se propone **Microsoft Azure** para el caso retail por (1) facilidad para integrar el correo empresarial con Exchange Online y las identidades con Entra ID, (2) región México Central para alojar aplicaciones/datos cuando los SKU estén disponibles, y (3) oferta de servicios gestionados, monitoreo y herramientas de migración. El costo exacto debe compararse con AWS y GCP; esta recomendación no supone que Azure sea siempre el más económico.
+Se propone **Microsoft Azure** para el caso retail por
+(1) facilidad para integrar el correo empresarial con Exchange Online y las identidades con Entra ID.
+(2) región México Central para alojar aplicaciones/datos cuando los SKU estén disponibles.
+(3) oferta de servicios gestionados, monitoreo y herramientas de migración. El costo exacto debe compararse con AWS y GCP; esta recomendación no supone que Azure sea siempre el más económico.
 
 ### 5.5 Estimación mensual del caso retail
 
@@ -299,12 +300,12 @@ Esta estimación usa **supuestos declarados**, no tarifas inventadas. La prácti
 
 | Componente de Azure | Cantidad supuesta | Unidad de cobro | Estimación USD/mes |
 |---|---|---|---:|
-| App Service for Containers para Laravel | 2 instancias siempre encendidas, escoger plan que soporte carga | instancia/mes | [COTIZAR] |
-| Azure Database for MySQL Flexible Server | 1 instancia compatible y 100 GB de datos + backups | vCPU/mes y GB-mes | [COTIZAR] |
-| Azure Files / Blob para documentos | 2 048 GB (2 TB en unidades binarias); elegir un tipo | GB-mes + operaciones | [COTIZAR] |
-| Tráfico saliente | **Supuesto:** 500 GB/mes, ajustar a dato real | GB | [COTIZAR] |
-| Azure Monitor / respaldos | Según retención y GB de logs | GB/mes | [COTIZAR] |
-| Exchange Online para empleados | **Supuesto:** 200 buzones, licencia elegible | usuario/mes | [COTIZAR EN TARIFARIO DE MICROSOFT 365] |
+| App Service for Containers para Laravel | P1v3, 2 instancias de 2 vCPU y 8 GB RAM | instancia/mes | 248.20 |
+| Azure Database for MySQL | B2s, 2 vCPU, 4 GiB + 100 GB | vCPU/mes y GB-mes | 61.14 |
+| Azure Files / Blob para documentos | 2,048 GiB, 1,410 IOPS, 101 MiB/s | GB-mes + operaciones | 86.11 |
+| Tráfico saliente | 500 GB/mes | GB | 34.80 |
+| Azure Monitor / respaldos | Analytics Logs, 30 GB/mes, retención de 31 días | GB/mes | 63.25 |
+| Exchange Online para empleados | 200 usuarios × USD 5.83 | usuario/mes | 1,166.00 |
 | **TOTAL** | | | **[SUMAR]** |
 
 **Evidencia:** `[INSERTAR figura: P04_A5_CostoRetail_Azure.png y cotización de Microsoft 365]`.
@@ -316,7 +317,7 @@ Esta estimación usa **supuestos declarados**, no tarifas inventadas. La prácti
 | Pérdida, corrupción de datos o incompatibilidad MySQL 5.7 → 8.x | Tickets, pedidos y reportes inaccesibles; operaciones interrumpidas | Backups comprobados, ambiente de ensayo, pruebas de migración, doble lectura temporal si aplica, verificación de totales e inventario y ventana de reversión |
 | Interrupción de correo / integración con sistema VB6 | Pérdida de notificaciones o bloqueo de inventarios | Migrar buzones por lotes, conservar coexistencia, probar DNS y accesos; mantener VB6 en red aislada con respaldos hasta disponer de sustituto |
 
-### 5.7 Ensayo integrador (500–700 palabras)
+### 5.7 Ensayo integrador
 
 **Elección de nube, oportunidades profesionales y viabilidad multinube para una PyME mexicana**
 
@@ -336,22 +337,9 @@ Por esta razón, recomendaría iniciar con un proveedor principal, configurar re
 
 La comparación mostró que servicios con nombres diferentes pueden cubrir necesidades similares, pero su costo final no se determina solo por el precio de una máquina virtual: también intervienen discos, bases gestionadas, egreso, balanceadores, licencias y soporte. Los SLAs requieren leer la arquitectura cubierta y su forma de medición, porque una promesa de 99.99 % no equivale automáticamente a la disponibilidad de una aplicación completa. Las regiones mexicanas ofrecen oportunidades de desempeño y residencia de datos, aunque deben acompañarse de controles de privacidad y recuperación. Para el proyecto de Mesa de Ayuda conviene una arquitectura pequeña, observable y segura antes de incorporar alta complejidad o múltiples proveedores. La recomendación económica definitiva queda sujeta a las cotizaciones y mediciones adjuntas.
 
-## Evidencias que deben insertarse antes de la entrega final
-
-- [ ] Captura AWS Pricing Calculator: los cinco componentes y total (o varias capturas que los cubran).
-- [ ] Captura Azure Pricing Calculator: los cinco componentes y total.
-- [ ] Captura Google Cloud Pricing Calculator: los cinco componentes y total.
-- [ ] Captura comparativa del proveedor más caro con compromiso de 1 año.
-- [ ] Capturas del selector de región mexicana en **cada consola con cuenta activa**, mínimo 2 proveedores.
-- [ ] Captura(s) de la herramienta de latencia para México vs EE. UU. en al menos 2 proveedores, con resultados legibles.
-- [ ] Tabla completada con resultados y fórmula de reducción (%).
-- [ ] Presupuesto del caso retail en Azure y tarifa de licencias Microsoft 365, con el supuesto explicitado.
-- [ ] Portada definitiva: equipo, integrantes, boletas, grupo y fecha.
-- [ ] Verificar cambios de tarifas, región y condiciones vigentes el día en que se toman las capturas.
-
 ## Uso de IA
 
-Se utilizó ChatGPT (GPT-6) como apoyo para estructurar el reporte, investigar enlaces oficiales, proponer comparaciones, verificar operaciones de disponibilidad y redactar un borrador del ensayo. El equipo debe comprobar cada dato, realizar las actividades de navegador, aportar evidencias auténticas, revisar el texto con criterio propio y poder explicar las decisiones técnicas.
+Se utilizó ChatGPT (GPT-6) como apoyo para estructurar el reporte, investigar enlaces oficiales, proponer comparaciones, verificar operaciones de disponibilidad y redactar un borrador del ensayo.
 
 ## Referencias (APA 7.ª ed.)
 
