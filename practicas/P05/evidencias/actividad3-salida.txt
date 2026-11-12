@@ -1,0 +1,64 @@
+Thu Nov 12 17:04:07 CST 2026
+NAME                   STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                       KERNEL-VERSION            CONTAINER-RUNTIME
+sd-p05-control-plane   Ready    control-plane   55s   v1.37.0   172.22.0.2    <none>        Debian GNU/Linux 13 (trixie)   7.0.12-linuxkit (arm64)   containerd://2.3.4
+deployment.apps/mi-app created
+service/mi-app created
+Waiting for deployment "mi-app" rollout to finish: 0 of 2 updated replicas are available...
+Waiting for deployment "mi-app" rollout to finish: 1 of 2 updated replicas are available...
+deployment "mi-app" successfully rolled out
+NAME                         READY   STATUS    RESTARTS   AGE   IP           NODE                   NOMINATED NODE   READINESS GATES
+pod/mi-app-656bf474d-8ntg5   1/1     Running   0          6s    10.244.0.5   sd-p05-control-plane   <none>           <none>
+pod/mi-app-656bf474d-hkn7q   1/1     Running   0          6s    10.244.0.6   sd-p05-control-plane   <none>           <none>
+
+NAME                 TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE   SELECTOR
+service/kubernetes   ClusterIP   10.96.0.1       <none>        443/TCP        61s   <none>
+service/mi-app       NodePort    10.96.199.157   <none>        80:30080/TCP   6s    app=mi-app
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+deployment.apps/mi-app scaled
+Waiting for deployment "mi-app" rollout to finish: 2 of 5 updated replicas are available...
+Waiting for deployment "mi-app" rollout to finish: 3 of 5 updated replicas are available...
+Waiting for deployment "mi-app" rollout to finish: 4 of 5 updated replicas are available...
+deployment "mi-app" successfully rolled out
+NAME                     READY   STATUS    RESTARTS   AGE   IP           NODE                   NOMINATED NODE   READINESS GATES
+mi-app-656bf474d-56w59   1/1     Running   0          1s    10.244.0.9   sd-p05-control-plane   <none>           <none>
+mi-app-656bf474d-8ntg5   1/1     Running   0          7s    10.244.0.5   sd-p05-control-plane   <none>           <none>
+mi-app-656bf474d-hkn7q   1/1     Running   0          7s    10.244.0.6   sd-p05-control-plane   <none>           <none>
+mi-app-656bf474d-hxqwb   1/1     Running   0          1s    10.244.0.7   sd-p05-control-plane   <none>           <none>
+mi-app-656bf474d-qtglw   1/1     Running   0          1s    10.244.0.8   sd-p05-control-plane   <none>           <none>
+deployment.apps/mi-app scaled
+deployment "mi-app" successfully rolled out
+NAME                     READY   STATUS        RESTARTS   AGE   IP           NODE                   NOMINATED NODE   READINESS GATES
+mi-app-656bf474d-56w59   1/1     Terminating   0          1s    10.244.0.9   sd-p05-control-plane   <none>           <none>
+mi-app-656bf474d-8ntg5   1/1     Terminating   0          7s    10.244.0.5   sd-p05-control-plane   <none>           <none>
+mi-app-656bf474d-hkn7q   1/1     Running       0          7s    10.244.0.6   sd-p05-control-plane   <none>           <none>
+mi-app-656bf474d-hxqwb   1/1     Terminating   0          1s    10.244.0.7   sd-p05-control-plane   <none>           <none>
+mi-app-656bf474d-qtglw   1/1     Terminating   0          1s    10.244.0.8   sd-p05-control-plane   <none>           <none>
+NOTA: El pod seleccionado ya estaba terminando por la reducción de réplicas; esta prueba no demuestra recuperación. Véase recuperacion.txt para la prueba válida.
+pod "mi-app-656bf474d-56w59" deleted from default namespace
+pod/mi-app-656bf474d-56w59 condition met
+deployment "mi-app" successfully rolled out
+Recuperación observada: 3 segundos
+NAME                     READY   STATUS    RESTARTS   AGE   IP           NODE                   NOMINATED NODE   READINESS GATES
+mi-app-656bf474d-hkn7q   1/1     Running   0          10s   10.244.0.6   sd-p05-control-plane   <none>           <none>
+deployment.apps/mi-app image updated
+Waiting for deployment "mi-app" rollout to finish: 1 old replicas are pending termination...
+Waiting for deployment "mi-app" rollout to finish: 1 old replicas are pending termination...
+deployment "mi-app" successfully rolled out
+nginx:1.27-alpine
+Warning: resource deployments/mi-app was previously managed with 'kubectl apply'. Rolling back will not update the kubectl.kubernetes.io/last-applied-configuration annotation, which may cause unexpected behavior on future 'kubectl apply' operations. Consider using 'kubectl apply' with your previous configuration file instead.
+deployment.apps/mi-app rolled back
+Waiting for deployment "mi-app" rollout to finish: 1 old replicas are pending termination...
+Waiting for deployment "mi-app" rollout to finish: 1 old replicas are pending termination...
+Waiting for deployment "mi-app" rollout to finish: 1 old replicas are pending termination...
+deployment "mi-app" successfully rolled out
+nginx:1.25-alpine
+NAME                      READY   STATUS        RESTARTS   AGE   IP            NODE                   NOMINATED NODE   READINESS GATES
+mi-app-656bf474d-br578    1/1     Running       0          1s    10.244.0.11   sd-p05-control-plane   <none>           <none>
+mi-app-75476b8ff4-qbqc4   1/1     Terminating   0          7s    10.244.0.10   sd-p05-control-plane   <none>           <none>

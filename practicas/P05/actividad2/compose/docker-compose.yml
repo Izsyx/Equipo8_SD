@@ -1,0 +1,25 @@
+services:
+  web:
+    build: ./app
+    ports:
+      - "127.0.0.1:18081:5000"
+    environment:
+      DATABASE_URL: postgresql://practica:practica@db:5432/practica
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: practica
+      POSTGRES_PASSWORD: practica
+      POSTGRES_DB: practica
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U practica -d practica"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - datos:/var/lib/postgresql/data
+volumes:
+  datos:

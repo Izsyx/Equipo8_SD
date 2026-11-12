@@ -1,0 +1,23 @@
+Thu Nov 12 17:02:52 CST 2026
+Cliente 29.7.2; servidor 29.7.2
+sd-p05-hola:multi 14.8MB
+sd-p05-hola:single 433MB
+Hola desde un contenedor - Equipo 8
+Hola desde un contenedor - Equipo 8
+Nombre: /sd-p05-web-estatica; estado: running; imagen: sd-p05-web:v1
+CONTAINER ID   NAME                  CPU %     MEM USAGE / LIMIT     MEM %     NET I/O      BLOCK I/O     PIDS
+b1d3d6e399cf   sd-p05-web-estatica   0.00%     8.645MiB / 7.748GiB   0.11%     666B / 84B   0B / 12.3kB   11
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Práctica 5 - Sistemas Distribuidos</title></head>
+<body><h1>Virtualización y contenedores</h1><p>Servidor nginx ejecutado en un contenedor.</p><p>Equipo 8 - Sistemas Distribuidos</p></body></html>
+<h1>Equipo 8 - Sistemas Distribuidos</h1><p>Visitas registradas en PostgreSQL: 1</p><h1>Equipo 8 - Sistemas Distribuidos</h1><p>Visitas registradas en PostgreSQL: 2</p>NAME           IMAGE                COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+sd-p05-db-1    postgres:16-alpine   "docker-entrypoint.s…"   db        23 seconds ago   Up 22 seconds (healthy)   5432/tcp
+sd-p05-web-1   sd-p05-web           "flask run --host=0.…"   web       23 seconds ago   Up 18 seconds             127.0.0.1:18081->5000/tcp
