@@ -8,7 +8,7 @@
 - **Grupo:** 7CV1 — Semestre 27/1
 - **Profesor:** MBA. Rodrigo Ojeda Santillán
 - **Equipo:** 8
-- **Integrantes del equipo:** [datos registrados en la práctica 2](../P02/readme.md#datos-del-equipo)
+- **Integrantes del equipo:** Israel Márquez Cárdenas | Esaul Tellez de la Cruz | Salvador Sandoval Garibay 
 
 > La práctica indica modalidad individual o equipos de máximo dos personas, según el profesor. Confirmar qué integrantes corresponden a esta entrega.
 
