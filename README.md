@@ -10,7 +10,7 @@
 * **Integrantes del equipo:**
   * Israel Márquez Cárdenas (2022300395)
   * Esaul Tellez de la Cruz (2023630692)
-  * Alumno 3 (Boleta)
+  * Salvador Sandoval Garibay (2022630151)
 
 ---
 
@@ -25,28 +25,34 @@ A continuación se detallan las cuentas configuradas en las plataformas de nube 
 | Israel Márquez | Azure | 87d70be2-e280-4fac-81bb-8e620dc4b7ba | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (1 año) | israelisipo@gmail.com |
 | Esaul Tellez de la Cruz | AWS | 528724997695| Cuenta de AWS | Sí (mx-central-1) | $100.00 USD (6 meses) | etellezd1900@alumno.ipn.mx |
 | Esaul Tellez de la Cruz | Azure | 1aaa6fc3-e0a8-48b4-b67b-63db395edde7 | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (12 meses) | etellezd1900@alumno.ipn.mx |
-| Alumno 3 | AWS | 9876-5432-1098 | Cuenta de AWS | Sí (mx-central-1) | $200.00 USD (6 meses) | correo3@ejemplo.com |
-| Alumno 3 | Azure | 11111111-1111-1111-1111-111111111111 | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (12 meses) | correo3@ejemplo.com |
+| Salvador Sandoval Garibay | AWS | 828035972390 | Cuenta de AWS | Sí (mx-central-1) | pago mensual | escomprueba21@gmail.com|
+| Salvador Sandoval Garibay | Azure | 2edcc1b8-73c6-4c9a-a288-14dd70e1c4f0 | Suscripción (Azure for Students) | Sí (Mexico Central) | $100.00 USD (12 meses) | ssandovalg2100@alumno.ipn.mx |
 
 ### Evidencias de la Fase 1 (Actividad A1: Reconocimiento de consola y facturación)
 
 #### Amazon Web Services (AWS)
 
+## 1. Reconocimiento de consola y facturación (Actividad A1)
+
+### Israel Márquez
+
+#### Amazon Web Services (AWS)
+
 **1. Identificador de cuenta (12 dígitos):**
 
-![A1 AWS ID](evidencias/P01/P01_A1_aws_israel_1.png)
+![A1 AWS ID Israel](evidencias/P01/P01_A1_aws_israel_1.png)
 
 <br>
 
 **2. Región México (Querétaro `mx-central-1`):**
 
-![A1 AWS Región](evidencias/P01/P01_A1_aws_israel_2.png)
+![A1 AWS Región Israel](evidencias/P01/P01_A1_aws_israel_2.png)
 
 <br>
 
 **3. Facturación actual ($0.00 USD) y saldo de créditos:**
 
-![A1 AWS Créditos](evidencias/P01/P01_A1_aws_israel_3.png)
+![A1 AWS Créditos Israel](evidencias/P01/P01_A1_aws_israel_3.png)
 
 <br>
 
@@ -54,71 +60,102 @@ A continuación se detallan las cuentas configuradas en las plataformas de nube 
 
 **1. Identificador de suscripción (Azure for Students):**
 
-![A1 Azure ID](evidencias/P01/P01_A1_azure_israel_1.png)
+![A1 Azure ID Israel](evidencias/P01/P01_A1_azure_israel_1.png)
 
 <br>
 
 **2. Región México (`Mexico Central`):**
 
-![A1 Azure Región](evidencias/P01/P01_A1_azure_israel_2.png)
+![A1 Azure Región Israel](evidencias/P01/P01_A1_azure_israel_2.png)
 
 <br>
 
 **3. Facturación actual ($0.00 USD) y créditos educativos:**
 
-![A1 Azure Créditos](evidencias/P01/P01_A1_azure_israel_3.png)
-
----
-
-## 2. Configuración de alertas de presupuesto (Actividad A2)
-
-Se establecieron los presupuestos obligatorios y umbrales preventivos en ambos proveedores:
-
-* **En AWS:**
-  1. Presupuesto de costo cero (`P1-israel-aws-cero`) para alertar ante cualquier consumo que exceda la capa gratuita (> $0.01 USD).
-  2. Presupuesto mensual de $5.00 USD (`P1-israel-aws`) con cuatro umbrales: 50% real ($2.50 USD), 80% real ($4.00 USD), 100% real ($5.00 USD) y 100% pronóstico (*forecasted*).
-* **En Azure:**
-  1. Presupuesto mensual de $5.00 USD (`P1-israel-azure`) vinculado a la suscripción de estudiante, con umbrales idénticos del 50%, 80%, 100% de gasto real y 100% proyectado.
-
-### Evidencias de Presupuestos y Alertas
-
-#### Amazon Web Services (AWS)
-
-**1. Lista de presupuestos con gasto actual en $0.00 USD:**
-
-![A2 AWS Presupuestos](evidencias/P01/P01_A2_aws_israel_1.png)
+![A1 Azure Créditos Israel](evidencias/P01/P01_A1_azure_israel_3.png)
 
 <br>
 
-**2. Detalle del presupuesto de 5 USD con los 4 umbrales y correo:**
+### Salvador Sandoval Garibay
 
-![A2 AWS Umbrales](evidencias/P01/P01_A2_aws_israel_2.png)
+#### Evidencias de reconocimiento de consola y facturación
+
+**1. Captura de evidencia:**
+
+![A1 Salvador 1](evidencias/P01/salvador/1.png)
+
+<br>
+
+**2. Captura de evidencia:**
+
+![A1 Salvador 2](evidencias/P01/salvador/1.1.png)
+
+
+## 2. Configuración de alertas de presupuesto (Actividad A2)
+
+### Israel Márquez
+
+Se establecieron los presupuestos y umbrales preventivos en ambos proveedores:
+
+- **En AWS:**
+  1. Presupuesto de costo cero (`P1-israel-aws-cero`) para alertar cuando el costo supere $0.01 USD.
+  2. Presupuesto mensual de $5.00 USD (`P1-israel-aws`) con cuatro umbrales: 50% real ($2.50 USD), 80% real ($4.00 USD), 100% real ($5.00 USD) y 100% pronóstico (*forecasted*).
+
+- **En Azure:**
+  1. Presupuesto mensual de $5.00 USD (`P1-israel-azure`) vinculado a la suscripción de estudiante, con umbrales del 50%, 80% y 100% de gasto real, y 100% proyectado.
+
+#### Evidencias de presupuestos y alertas en AWS
+
+**1. Lista de presupuestos con gasto actual en $0.00 USD:**
+
+![A2 AWS Presupuestos Israel](evidencias/P01/P01_A2_aws_israel_1.png)
+
+<br>
+
+**2. Detalle del presupuesto de $5.00 USD con los cuatro umbrales y correo:**
+
+![A2 AWS Umbrales Israel](evidencias/P01/P01_A2_aws_israel_2.png)
 
 <br>
 
 **3. Evidencia viva de monitoreo continuo (Estado OK):**
 
-![A2 AWS Estado OK](evidencias/P01/P01_A2_aws_israel_3.png)
+![A2 AWS Estado OK Israel](evidencias/P01/P01_A2_aws_israel_3.png)
 
 <br>
 
-#### Microsoft Azure
+### Salvador Sandoval Garibay
 
-**1. Lista de presupuestos con costo actual en $0.00 USD:**
+#### Evidencias de presupuestos y alertas
 
-![A2 Azure Presupuestos](evidencias/P01/P01_A2_azure_israel_1.png)
 
-<br>
+**1. Captura de evidencia:**
 
-**2. Detalle del presupuesto con los 4 umbrales:**
-
-![A2 Azure Umbrales](evidencias/P01/P01_A2_azure_israel_2.png)
+![A1 Salvador 3](evidencias/P01/salvador/1.2.png)
 
 <br>
 
-**3. Evidencia viva de monitoreo continuo en Cost Management:**
+**2. Captura de evidencia:**
 
-![A2 Azure Estado OK](evidencias/P01/P01_A2_azure_israel_3.png)
+![A1 Salvador 4](evidencias/P01/salvador/1.3.png)
+
+---
+
+**3. Captura de evidencia:**
+
+![A2 Salvador 1](evidencias/P01/salvador/2.png)
+
+<br>
+
+**4. Captura de evidencia: nota:Como se uso para otros fines, se tiene algunos recursos contabilizados, pero ninguno para esta práctica**
+
+![A2 Salvador 2](evidencias/P01/salvador/2.1.png)
+
+<br>
+
+**5. Captura de evidencia:**
+
+![A2 Salvador 3](evidencias/P01/salvador/2.2.png)
 
 ---
 
@@ -160,8 +197,27 @@ Se estimó la arquitectura de referencia compuesta por:
 | **Diferencia porcentual** | | | **+15.02% en México** | Base comparativa | |
 
 ---
+## 4. Identificación de modelos de servicio en la consola (Actividad B1)
 
-## 4. Características esenciales del NIST comprobadas en la consola (Actividad B2)
+| Proveedor | Servicio | Modelo | Qué administra el proveedor | Qué administras tú | Unidad de cobro | Capa gratuita | Disponible en México | Captura de evidencia |
+|---|---|---|---|---|---|---|---|---|
+| AWS | Amazon EC2 | IaaS | Hardware, red física y virtualización. | Sistema operativo, parches, aplicaciones, datos y seguridad. | Instancia por hora o segundo, según configuración. | Mediante créditos para cuentas nuevas; sin cuota gratuita permanente de instancias. | mx-central-1. | ![EC2](<evidencias/P01/table 3/1.png>) |
+| AWS | Elastic Beanstalk | PaaS | Aprovisionamiento del entorno, balanceo, escalado y monitoreo. | Código, datos, configuración y políticas de actualización. | Sin cargo adicional por Beanstalk; se cobran los recursos utilizados. | El servicio no tiene cargo adicional; los recursos utilizados se cobran o consumen créditos. | No existe en mx-central-1. | ![Beanstalk](<evidencias/P01/table 3/2.png>) |
+| AWS | AWS Lambda | FaaS | Servidores, infraestructura de ejecución y escalado. | Código, dependencias, memoria, permisos y disparadores. | Millón de solicitudes y GB-segundo de ejecución. | Sí: 1 millón de solicitudes y 400,000 GB-segundo mensuales. | mx-central-1. | ![Lambda](<evidencias/P01/table 3/3.png>) |
+| AWS | Amazon ECS con Fargate | Contenedores gestionados | Servidores y ejecución de contenedores. | Imágenes, tareas, servicios, red, permisos y reglas de escalado. | vCPU-segundo y GB-segundo de memoria asignada. | No tiene cuota gratuita propia de cómputo; se cobra la CPU y memoria utilizadas. | mx-central-1. | ![Fargate 4](<evidencias/P01/table 3/4.png>) ![Fargate 4.1](<evidencias/P01/table 3/4.1.png>) ![Fargate 4.2](<evidencias/P01/table 3/4.2.png>) |
+| AWS | Amazon RDS para PostgreSQL | Base de datos gestionada | Infraestructura, mantenimiento del motor y mecanismos de respaldo y recuperación. | Esquemas, consultas, datos, usuarios y configuración de respaldos y disponibilidad. | Instancia por hora y almacenamiento por GB-mes. | Mediante créditos para cuentas nuevas; sin cuota gratuita permanente de instancias. | mx-central-1. | ![RDS](<evidencias/P01/table 3/5.png>) |
+| AWS | Amazon S3 | Almacenamiento de objetos | Infraestructura, durabilidad y disponibilidad del almacenamiento. | Objetos, buckets, permisos, clases de almacenamiento y ciclo de vida. | GB-mes, solicitudes y transferencia según uso. | Mediante créditos para cuentas nuevas; sin cuota gratuita permanente de almacenamiento. | en mx-central-1. | ![S3](<evidencias/P01/table 3/6.png>) |
+| AWS | Amazon Bedrock | IA gestionada | Infraestructura de inferencia y alojamiento de modelos. | Modelo, prompts, datos, permisos e integración. | Tokens de entrada y salida, según modelo y modalidad. | Sin cuota gratuita general de inferencia; permite utilizar créditos de bienvenida en usos elegibles. | mx-central-1. | ![Bedrock 7](<evidencias/P01/table 3/7.png>) ![Bedrock 7.1](<evidencias/P01/table 3/7.1.png>) |
+| Azure | Azure Virtual Machines | IaaS | Hardware, red física y virtualización. | Sistema operativo, parches, aplicaciones, datos y seguridad. | Tiempo de ejecución, con tarifa por hora según tamaño. | Sí, durante 12 meses para nuevos clientes: 750 horas mensuales por cada tipo de máquina elegible. | Mexico Central. | ![Virtual Machines](<evidencias/P01/table 3/8.png>) |
+| Azure | Azure App Service | PaaS | Infraestructura y plataforma de alojamiento de aplicaciones. | Código, datos, configuración, dependencias y reglas de escalado. | Instancia del plan por tiempo de uso; puede mostrarse una tarifa mensual. | Sí, plan F1: 60 minutos de CPU al día y 1 GB de almacenamiento, con recursos compartidos. | Mexico Central. | ![App Service](<evidencias/P01/table 3/9.png>) |
+| Azure | Azure Functions | FaaS | Infraestructura de ejecución y escalado según el plan. | Código, dependencias, disparadores, permisos y configuración. | En Consumption: millón de ejecuciones y GB-segundo. | Sí, en Consumption: 1 millón de ejecuciones y 400,000 GB-segundo mensuales por suscripción. | Mexico Central. | ![Functions](<evidencias/P01/table 3/10.png>) |
+| Azure | Azure Container Apps | Contenedores gestionados | Infraestructura, orquestación y mecanismos de escalado. | Imágenes, configuración, permisos y reglas de escalado. | En Consumption: vCPU-segundo, GiB-segundo y millón de solicitudes. | Sí, en Consumption: 180,000 vCPU-segundo, 360,000 GiB-segundo y 2 millones de solicitudes mensuales por suscripción. | Mexico Central. | ![Container Apps](<evidencias/P01/table 3/11.png>) |
+| Azure | Azure SQL Database | Base de datos gestionada | Infraestructura, actualizaciones del motor, respaldos y alta disponibilidad. | Tablas, consultas, datos, usuarios, capacidad y seguridad. | Según modalidad: vCore-hora, vCore-segundo o plan DTU; almacenamiento por GB-mes. | Sí, oferta gratuita: 100,000 vCore-segundo mensuales, 32 GB de datos y 32 GB de respaldos por base de datos; hasta 10 bases por suscripción. | Mexico Central. | ![SQL Database](<evidencias/P01/table 3/12.png>) |
+| Azure | Azure Blob Storage | Almacenamiento de objetos | Infraestructura, almacenamiento y replicación según la opción elegida. | Contenedores, archivos, permisos, nivel de acceso y ciclo de vida. | GB-mes, operaciones y transferencia según uso. | Sí, durante 12 meses para nuevos clientes: 5 GB Hot LRS, 20,000 lecturas y 10,000 escrituras mensuales. | Mexico Central. | ![Blob Storage](<evidencias/P01/table 3/13.png>) |
+| Azure | Azure OpenAI | IA gestionada | Alojamiento de modelos e infraestructura de inferencia. | Modelo, implementación, prompts, datos, permisos e integración. | En pago por uso: millón de tokens de entrada y salida, según modelo. | No tiene una capa gratuita general de inferencia; se cobra según modelo y modalidad. | No está disponible. | ![Azure OpenAI](<evidencias/P01/table 3/14.png>) |
+
+
+## 5. Características esenciales del NIST comprobadas en la consola (Actividad B2)
 
 A continuación se evidencian las 5 características esenciales definidas por NIST SP 800-145:
 
@@ -200,7 +256,7 @@ El consumo de recursos se monitorea, controla y mide de forma cuantitativa y tra
 
 ---
 
-## 5. Auditoría de inventario en cero y facturación (Actividad B3)
+## 6. Auditoría de inventario en cero y facturación (Actividad B3)
 
 Se auditó la infraestructura en todas las regiones para garantizar que no existan recursos cobrables encendidos:
 
@@ -237,7 +293,7 @@ Se auditó la infraestructura en todas las regiones para garantizar que no exist
 
 ---
 
-## 6. Preguntas de análisis
+## 7. Preguntas de análisis
 
 ### 1. ¿Conviene una cuenta compartida del equipo o una por integrante? Comparar riesgos y ventajas en costos y en seguridad.
 Conviene utilizar una cuenta central compartida administrada bajo un esquema de organización (como AWS Organizations o grupos de recursos en Azure con control de acceso RBAC), o bien mantener cuentas individuales para experimentación aislada y una sola cuenta oficial para el proyecto. Tener una sola cuenta compartida con una única credencial raíz expone al equipo a un riesgo crítico de seguridad: si un integrante filtra la clave o sube accidentalmente las credenciales a GitHub, todo el entorno y la tarjeta asociada quedan comprometidos. Por otro lado, tener cuentas totalmente separadas sin supervisión fragmenta los presupuestos y complica el monitoreo del gasto acumulado. La mejor práctica observada consiste en delegar privilegios mínimos a cada integrante mediante identidades federadas (IAM/Entra ID) manteniendo un presupuesto consolidado y centralizado con alertas activas.
@@ -268,7 +324,7 @@ Estos cambios de políticas demuestran que las capas gratuitas son incentivos co
 
 ---
 
-## 7. Lista de verificación de seguridad y costos
+## 8. Lista de verificación de seguridad y costos
 
 - [x] Las alertas de presupuesto de 5 USD están configuradas y activas en todas las cuentas del equipo.
 - [x] En AWS se configuró y verificó adicionalmente el presupuesto de gasto cero (*Zero spend budget*).
@@ -279,7 +335,7 @@ Estos cambios de políticas demuestran que las capas gratuitas son incentivos co
 
 ---
 
-## 8. Conclusiones y Referencias
+## 9. Conclusiones y Referencias
 
 ### Conclusiones
 La realización de esta práctica permitió comprender que la administración de sistemas distribuidos y cómputo en la nube exige una responsabilidad técnica y financiera estricta desde el primer momento. La característica de *servicio medido* del cómputo en la nube representa una gran ventaja para la elasticidad de costos, pero demanda la adopción inmediata de prácticas FinOps como la parametrización de presupuestos y umbrales preventivos para evitar cobros inesperados (*bill shock*).
@@ -294,16 +350,16 @@ La realización de esta práctica permitió comprender que la administración de
 
 ---
 
-## 9. Sección obligatoria: «Uso de IA»
+## 10. Sección obligatoria: «Uso de IA»
 * **Herramienta utilizada:** Gemini (Google)
 * **Finalidad y alcance del apoyo:** Se utilizó como asistente para estructurar la plantilla del reporte en formato Markdown, guía para la configuración de alertas/presupuestos y resolver dudas de autenticación en las consolas de AWS y Azure. Capturas y cifras fueron verificados y validados manualmente por nosotros.
 
 ---
 
-## 10. Tabla de contribución del equipo
+## 11. Tabla de contribución del equipo
 
 | Sección | Responsable | Entregables Principales | Aportación |
 | :--- | :--- | :--- | :--- |
 | *(Costos y Calculadoras)* | Esaul Tellez de la Cruz | • Estimar la arquitectura de referencia en la calculadora del Proveedor A (AWS) y Proveedor B (Azure) (México vs. EE. UU. = 4 estimaciones).<br>• Realizar la estimación preliminar del proyecto del equipo.<br>• Llenar la Tabla 2 del reporte y exportar los archivos a `evidencias/P01/costos/`.<br>• Redactar respuestas a las Preguntas 2 y 3 (comparativa México vs. EE. UU. y costos ocultos si se apaga la VM). | 33.3% |
-| *(Modelos de Servicio e IA)* | [Nombre de Persona B] | • Realizar la exploración de B1 en el Proveedor A (AWS) y Proveedor B (Azure) (los 14 servicios: IaaS, PaaS, FaaS, contenedores, BD, objetos, IA) sin crear recursos.<br>• Investigar el ejemplo de SaaS (precios y justificación).<br>• Llenar la Tabla 3 del reporte con unidades de cobro y disponibilidad en Querétaro/México.<br>• Redactar respuesta a la Pregunta 4 (modelo ideal para el proyecto). | 33.3% |
+| *(Modelos de Servicio e IA)* | Salvador Sandoval Garibay | • Realizar la exploración de B1 en el Proveedor A (AWS) y Proveedor B (Azure) (los 14 servicios: IaaS, PaaS, FaaS, contenedores, BD, objetos, IA) sin crear recursos.<br>• Investigar el ejemplo de SaaS (precios y justificación).<br>• Llenar la Tabla 3 del reporte con unidades de cobro y disponibilidad en Querétaro/México.<br>• Redactar respuesta a la Pregunta 4 (modelo ideal para el proyecto). | 33.3% |
 | *(NIST, Seguridad y Repositorio)* | Israel Márquez Cárdenas | • Obtener las capturas y redacción de B2: las 5 características del NIST en consola/CLI.<br>• Coordinar B3: revisión de inventario en cero, saldo de créditos y auditoría de seguridad (verificar que ninguna captura muestre llaves o credenciales).<br>• Estructurar el archivo `practicas/P01/README.md`, consolidar la Tabla 1 y redactar las bitácoras (`2026-09-01.md` y `2026-09-08.md`). | 33.4% |

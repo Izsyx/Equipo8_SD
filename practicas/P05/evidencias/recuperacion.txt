@@ -1,0 +1,9 @@
+Pod activo antes de la falla: mi-app-656bf474d-br578
+NAME                     READY   STATUS    RESTARTS   AGE   IP            NODE                   NOMINATED NODE   READINESS GATES
+mi-app-656bf474d-br578   1/1     Running   0          16s   10.244.0.11   sd-p05-control-plane   <none>           <none>
+pod "mi-app-656bf474d-br578" deleted from default namespace
+pod/mi-app-656bf474d-ldl7v condition met
+Pod de reemplazo: mi-app-656bf474d-ldl7v
+Tiempo observado hasta Ready: 3 segundos
+NAME                     READY   STATUS    RESTARTS   AGE   IP            NODE                   NOMINATED NODE   READINESS GATES
+mi-app-656bf474d-ldl7v   1/1     Running   0          3s    10.244.0.12   sd-p05-control-plane   <none>           <none>
