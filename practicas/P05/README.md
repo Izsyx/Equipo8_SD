@@ -1,4 +1,52 @@
-# Práctica 5 — Actividades 2 y 3
+# Práctica 5 — Virtualización en el cómputo en la nube
+
+## Datos del equipo
+
+- **Institución:** Instituto Politécnico Nacional — Escuela Superior de Cómputo (ESCOM)
+- **Carrera:** Ingeniería en Sistemas Computacionales — Plan 2020
+- **Materia:** Sistemas Distribuidos
+- **Grupo:** 7CV1 — Semestre 27/1
+- **Profesor:** MBA. Rodrigo Ojeda Santillán
+- **Equipo:** 8
+- **Integrantes del equipo:** [datos registrados en la práctica 2](../P02/readme.md#datos-del-equipo)
+
+> La práctica indica modalidad individual o equipos de máximo dos personas, según el profesor. Confirmar qué integrantes corresponden a esta entrega.
+
+---
+
+## Introducción
+
+La virtualización permite compartir y aislar recursos de cómputo mediante máquinas virtuales, contenedores y plataformas de orquestación. En esta práctica se comparan estos mecanismos y se documenta el uso de Docker, Docker Compose y Kubernetes en un entorno local. También se analizan tecnologías emergentes y el futuro de la virtualización.
+
+## Estado y contenido de la práctica
+
+- **Actividad 1 — Máquinas virtuales:** pendiente.
+- **Actividad 2 — Contenedores:** imágenes de nginx y Go, y aplicación Flask con PostgreSQL mediante Compose.
+- **Actividad 3 — Kubernetes:** Deployment, Service, escalado, recuperación y actualización con rollback en Kind.
+- **Actividad 4 — Análisis comparativo:** tablas y respuestas en [actividades_4_5.tex](actividades_4_5.tex).
+- **Actividad 5 — Ensayo integrador:** incluido en [actividades_4_5.tex](actividades_4_5.tex).
+
+El [reporte en LaTeX](reporte.tex) reúne las actividades, preguntas, referencias y capturas. Se compila desde la raíz del repositorio; su compilación aún no se ha verificado. La carpeta [evidencias](evidencias/) contiene las capturas originales y los registros de ejecución.
+
+## Resultados y evidencias
+
+Al construir el ejemplo de Go, la imagen de una etapa ocupó **433 MB** y la imagen multi-stage **14.8 MB** en el entorno utilizado. La aplicación con Compose registró visitas en PostgreSQL y mostró el contador en el navegador.
+
+![Comparación de imágenes y ejecución de Go](evidencias/recortes/docker-imagenes.png)
+
+![Aplicación Flask conectada a PostgreSQL](evidencias/compose.jpg)
+
+En Kubernetes se verificaron dos y cinco réplicas, la reducción a una réplica, la reposición de un pod y una actualización seguida de rollback. En una prueba previa, el reemplazo alcanzó el estado `Ready` en aproximadamente tres segundos; ese tiempo depende del entorno.
+
+![Escalado a cinco réplicas](evidencias/recortes/kubernetes-5-replicas.png)
+
+![Recuperación de un pod](evidencias/recortes/kubernetes-recuperacion.png)
+
+El resto de las capturas y salidas se encuentran en [evidencias](evidencias/), incluidos los registros de actualización y rollback. La salida `actividad3-salida.txt` identifica un primer intento inválido de recuperación; la medición válida está en `recuperacion.txt`.
+
+---
+
+## Ejecución de las actividades 2 y 3
 
 ## Actividad 2. Contenedores
 
