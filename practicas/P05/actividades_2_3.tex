@@ -40,7 +40,16 @@ CMD ["/hola"]
 
 En la ejecución realizada, \texttt{docker images} mostró 433 MB para la imagen de una etapa y 14.8 MB para la de varias etapas. El tamaño depende de la arquitectura, la versión y las capas de las imágenes. También se consultaron la configuración, los registros y el consumo mediante \texttt{docker inspect}, \texttt{docker logs} y \texttt{docker stats}. Las salidas se conservaron en \texttt{evidencias/actividad2-salida.txt}.
 
-% Insertar captura real de docker images, ejecución y comandos de inspección.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{practicas/P05/evidencias/recortes/docker-imagenes.png}
+\caption{Comparación de tamaños y ejecución de ambas imágenes.}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{practicas/P05/evidencias/recortes/docker-inspeccion-compose.png}
+\caption{Inspección, registros, consumo y servicios de Compose.}
+\end{figure}
 
 \subsection{Aplicación con Docker Compose}
 Se construyó una aplicación Flask que se conecta a PostgreSQL mediante el nombre de servicio \texttt{db}. En cada visita inserta un registro y consulta el total almacenado. La base utiliza un volumen y una comprobación de salud; el servicio web espera a que esté lista. En dos solicitudes consecutivas se observaron los valores 1 y 2. El código completo está en \texttt{actividad2/compose}.
@@ -80,7 +89,17 @@ kubectl scale deployment mi-app --replicas=1
 \includegraphics[width=.38\textwidth]{practicas/P05/evidencias/kubernetes.jpg}
 \caption{Nginx expuesto mediante el Service de Kubernetes.}
 \end{figure}
-% Pendiente: capturas de terminal con nodos, dos, cinco y una réplica.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{practicas/P05/evidencias/recortes/kubernetes-2-replicas.png}
+\caption{Nodo, Service y dos réplicas iniciales.}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{practicas/P05/evidencias/recortes/kubernetes-5-replicas.png}
+\includegraphics[width=\linewidth]{practicas/P05/evidencias/recortes/kubernetes-1-replica.png}
+\caption{Escalado a cinco réplicas y reducción a una.}
+\end{figure}
 
 \subsection{Recuperación y actualización}
 Después de esperar a que quedara un solo pod activo, se eliminó y se observó la creación de otro. El reemplazo alcanzó la condición \texttt{Ready} en aproximadamente 3 segundos en esta ejecución; el tiempo puede variar. La prueba válida se encuentra en \texttt{evidencias/recuperacion.txt}. Se cambió la imagen de \texttt{nginx:1.25-alpine} a \texttt{nginx:1.27-alpine}, se esperó a que terminara la actualización y se ejecutó un rollback. La imagen final volvió a ser \texttt{nginx:1.25-alpine}.
@@ -93,7 +112,17 @@ kubectl rollout undo deployment/mi-app
 kubectl rollout status deployment/mi-app
 \end{lstlisting}
 
-% Insertar capturas reales de recuperación, actualización y rollback.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{practicas/P05/evidencias/recortes/kubernetes-recuperacion.png}
+\caption{Eliminación y reemplazo de un pod.}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{practicas/P05/evidencias/recortes/kubernetes-actualizacion.png}
+\includegraphics[width=\linewidth]{practicas/P05/evidencias/recortes/kubernetes-rollback.png}
+\caption{Actualización de imagen y rollback.}
+\end{figure}
 
 \subsection{Preguntas de reflexión}
 \begin{enumerate}
