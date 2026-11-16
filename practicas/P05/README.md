@@ -6,11 +6,10 @@
 - **Carrera:** Ingeniería en Sistemas Computacionales — Plan 2020
 - **Materia:** Sistemas Distribuidos
 - **Grupo:** 7CV1 — Semestre 27/1
-- **Profesor:** MBA. Rodrigo Ojeda Santillán
+- **Profesor:**  Rodrigo Ojeda Santillán
 - **Equipo:** 8
 - **Integrantes del equipo:** Israel Márquez Cárdenas | Esaul Tellez de la Cruz | Salvador Sandoval Garibay 
 
-> La práctica indica modalidad individual o equipos de máximo dos personas, según el profesor. Confirmar qué integrantes corresponden a esta entrega.
 
 ---
 
